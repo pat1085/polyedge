@@ -14,7 +14,7 @@ const TELEGRAM_BOT_TOKEN   = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID     = process.env.TELEGRAM_CHAT_ID;
 
 const MIN_EDGE_RETURN_PCT  = 20;
-const MIN_LIQUIDITY        = 5000;   // lowered -- Gamma API returns floats
+const MIN_LIQUIDITY = 0;   // lowered -- Gamma API returns floats
 const VOL_LIQ_RATIO_THRESH = 3.0;
 const MAX_DAYS_TO_RESOLVE  = 180;   // widened -- some markets have no endDate
 const CORR_GAP_THRESH      = 20;
