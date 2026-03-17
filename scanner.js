@@ -79,8 +79,8 @@ function processMarkets(raw) {
 
   return normalized.filter(m => {
     if (!m.outcomePrices) return false;
-    const p = parsePrice(m.outcomePrices);
-if (p <= 0.01 || p >= 0.99) return false;  // filter resolved/broken markets
+    const rawPrice = parsePrice(m.outcomePrices);
+if (rawPrice <= 0.01 || rawPrice >= 0.99) return false;  // filter resolved/broken markets
     if (m.liquidity < MIN_LIQUIDITY) return false;
 if (m.volume < MIN_VOLUME) return false;
 const p = parsePrice(m.outcomePrices);
