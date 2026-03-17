@@ -1,0 +1,14 @@
+{
+  "name": "polyedge-scanner",
+  "version": "1.0.0",
+  "description": "Polymarket edge scanner with Telegram alerts",
+  "main": "scanner.js",
+  "type": "module",
+  "scripts": {
+    "scan": "node scanner.js",
+    "test": "node scanner.js --dry-run"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
