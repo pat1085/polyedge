@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POLY // EDGE — Decision Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne:wght@700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:       #05050d;
+    --surface:  #0a0a18;
+    --border:   #141428;
+    --green:    #00ff88;
+    --green2:   #00cc6a;
+    --red:      #ff3355;
+    --amber:    #ffb800;
+    --blue:     #4db8ff;
+    --text:     #d0d0f0;
+    --dim:      #484870;
+    --dimmer:   #252540;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* noise texture overlay */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 0; opacity: 0.4;
+  }
+
+  .wrap { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 24px 20px; }
+
+  /* ── Header ── */
+  .hdr {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px;
+  }
+  .logo {
+    font-family: 'Syne', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--green), #c8ffe8);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .sub { font-size: 10px; color: var(--dim); letter-spacing: 2px; margin-top: 2px; }
+  .last-updated { font-size: 10px; color: var(--dim); text-align: right; }
+
+  /* ── Verdict banner ── */
+  .verdict {
+    border-radius: 4px; padding: 20px 24px; margin-bottom: 24px;
+    display: flex; align-items: center; gap: 20px;
+    animation: fadeIn 0.6s ease;
+  }
+  .verdict.not-ready { background: #ff335510; border: 1px solid #ff335530; border-left: 4px solid var(--red); }
+  .verdict.partial    { background: #ffb80010; border: 1px solid #ffb80030; border-left: 4px solid var(--amber); }
+  .verdict.ready      { background: #00ff8810; border: 1px solid #00ff8830; border-left: 4px solid var(--green); }
+  .verdict-label { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; letter-spacing: 2px; }
+  .verdict.not-ready .verdict-label { color: var(--red); }
+  .verdict.partial    .verdict-label { color: var(--amber); }
+  .verdict.ready      .verdict-label { color: var(--green); }
+  .verdict-detail { flex: 1; }
+  .verdict-reason { font-size: 12px; color: var(--text); margin-top: 4px; }
+  .verdict-progress { margin-top: 10px; }
+  .progress-bar { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; margin-top: 4px; }
+  .progress-fill { height: 100%; border-radius: 2px; transition: width 1s ease; }
+
+  /* ── Stats row ── */
+  .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
+  .stat {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 4px;
+    padding: 14px 16px; position: relative; overflow: hidden;
+    animation: fadeUp 0.5s ease both;
+  }
+  .stat::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+    background: var(--accent, var(--dim));
+  }
+  .stat-label { font-size: 9px; color: var(--dim); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+  .stat-value { font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 800; color: var(--accent, var(--text)); line-height: 1; }
+  .stat-sub { font-size: 10px; color: var(--dim); margin-top: 4px; }
+
+  /* ── Two col layout ── */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+
+  /* ── Panels ── */
+  .panel {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 4px;
+    overflow: hidden; animation: fadeUp 0.6s ease both;
+  }
+  .panel-hdr {
+    padding: 12px 16px; border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+    background: linear-gradient(90deg, #ffffff04, transparent);
+  }
+  .panel-title { font-size: 10px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--dim); }
+  .panel-badge {
+    font-size: 10px; padding: 2px 8px; border-radius: 2px; font-weight: 500;
+    background: var(--dimmer); color: var(--dim);
+  }
+  .panel-body { padding: 16px; }
+
+  /* ── Signal type cards ── */
+  .sig-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+  .sig-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 4px;
+    padding: 16px; border-top: 3px solid var(--sig-color);
+    animation: fadeUp 0.7s ease both;
+  }
+  .sig-name { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--sig-color); margin-bottom: 10px; font-weight: 500; }
+  .sig-hit { font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 800; color: var(--sig-color); line-height: 1; }
+  .sig-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+  .sig-meta-item { }
+  .sig-meta-label { font-size: 9px; color: var(--dim); letter-spacing: 1px; }
+  .sig-meta-val { font-size: 13px; font-weight: 500; margin-top: 2px; }
+  .sig-bar { height: 3px; background: var(--border); border-radius: 2px; margin-top: 10px; overflow: hidden; }
+  .sig-bar-fill { height: 100%; border-radius: 2px; background: var(--sig-color); transition: width 1.2s ease; }
+
+  /* ── P&L curve ── */
+  #pnl-chart { width: 100%; height: 180px; display: block; }
+
+  /* ── Trade log ── */
+  .trade-row {
+    padding: 9px 0; border-bottom: 1px solid var(--border);
+    display: grid; grid-template-columns: 20px 1fr 60px 60px;
+    gap: 10px; align-items: center;
+    transition: background 0.15s;
+  }
+  .trade-row:last-child { border-bottom: none; }
+  .trade-row:hover { background: #ffffff04; margin: 0 -16px; padding: 9px 16px; }
+  .trade-status { font-size: 12px; text-align: center; }
+  .trade-q { font-size: 11px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .trade-dir { font-size: 10px; text-align: right; }
+  .trade-pnl { font-size: 12px; font-weight: 500; text-align: right; font-family: 'DM Mono', monospace; }
+  .win  { color: var(--green); }
+  .loss { color: var(--red); }
+  .pending-dot { color: var(--dim); }
+
+  /* ── Kelly calculator ── */
+  .kelly-calc { }
+  .kelly-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .kelly-label { font-size: 11px; color: var(--dim); width: 120px; flex-shrink: 0; }
+  .kelly-input {
+    flex: 1; background: var(--border); border: 1px solid var(--dimmer);
+    color: var(--text); padding: 6px 10px; font-family: 'DM Mono', monospace;
+    font-size: 13px; border-radius: 2px; outline: none;
+  }
+  .kelly-input:focus { border-color: var(--green); }
+  .kelly-result {
+    background: var(--dimmer); border-radius: 4px; padding: 14px 16px;
+    margin-top: 8px;
+  }
+  .kelly-result-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+  .kelly-result-row:last-child { margin-bottom: 0; }
+  .kelly-result-label { font-size: 10px; color: var(--dim); }
+  .kelly-result-val { font-size: 14px; font-weight: 500; color: var(--green); font-family: 'DM Mono'; }
+
+  /* ── Loading / error ── */
+  .loading { text-align: center; padding: 60px; color: var(--dim); }
+  .error-box { background: #ff335510; border: 1px solid #ff335530; padding: 20px; border-radius: 4px; color: var(--red); }
+
+  /* ── Config banner ── */
+  .config-banner {
+    background: #ffb80010; border: 1px solid #ffb80030; border-radius: 4px;
+    padding: 14px 18px; margin-bottom: 20px; font-size: 12px; color: var(--amber);
+    display: none;
+  }
+  .config-banner code { background: var(--dimmer); padding: 2px 6px; border-radius: 2px; }
+
+  /* ── Animations ── */
+  @keyframes fadeIn  { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes fadeUp  { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+  @media (max-width: 700px) {
+    .stats-row { grid-template-columns: repeat(2, 1fr); }
+    .sig-cards  { grid-template-columns: 1fr; }
+    .two-col    { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ── CONFIGURE THIS ── -->
+  <script>
+    // 👇 UPDATE THESE TWO VALUES with your GitHub username and repo name
+    const GITHUB_USER = "pat1085";
+    const GITHUB_REPO = "polyedge";
+    // trades.json URL (auto-constructed, no need to change)
+    const TRADES_URL  = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/trades.json`;
+  </script>
+
+  <div id="config-banner" class="config-banner">
+    ⚠ Update <code>GITHUB_USER</code> and <code>GITHUB_REPO</code> at the top of this file before deploying.
+  </div>
+
+  <div class="hdr">
+    <div>
+      <div class="logo">POLY // EDGE</div>
+      <div class="sub">GO-LIVE DECISION DASHBOARD</div>
+    </div>
+    <div class="last-updated" id="last-updated">Loading...</div>
+  </div>
+
+  <div id="root"><div class="loading">Fetching trade data from GitHub...</div></div>
+</div>
+
+<script>
+// ─── CALCULATIONS ──────────────────────────────────────────────────────────
+function calcStats(trades) {
+  const resolved = trades.filter(t => t.status === "WIN" || t.status === "LOSS");
+  const pending  = trades.filter(t => t.status === "PENDING");
+  const wins     = resolved.filter(t => t.status === "WIN");
+
+  function typeStats(type) {
+    const tt = resolved.filter(t => t.signalType === type);
+    if (!tt.length) return { total: 0, wins: 0, losses: 0, hitRate: null, pnl: 0 };
+    const w   = tt.filter(t => t.status === "WIN");
+    const pnl = tt.reduce((s, t) => s + (t.paperPnl || 0), 0);
+    return { total: tt.length, wins: w.length, losses: tt.length - w.length, hitRate: (w.length / tt.length) * 100, pnl };
+  }
+
+  const pnl     = resolved.reduce((s, t) => s + (t.paperPnl || 0), 0);
+  const hitRate = resolved.length ? (wins.length / resolved.length) * 100 : null;
+  const avgReturn = wins.length ? wins.reduce((s, t) => s + (t.paperPnl || 0), 0) / wins.length : 0;
+
+  // Kelly
+  let kellyUnit = 0;
+  if (hitRate !== null && avgReturn > 0) {
+    const p = hitRate / 100, q = 1 - p, b = avgReturn;
+    kellyUnit = Math.max(0, Math.min(((b * p - q) / b) * 0.25, 0.05));
+  }
+
+  // P&L curve (cumulative per resolved trade)
+  let cum = 0;
+  const curve = resolved.map(t => { cum += (t.paperPnl || 0); return cum; });
+
+  // Readiness
+  const MIN = 40, MIN_HR = 55;
+  let verdict = "not-ready", reason = "", progress = 0;
+  if (resolved.length < MIN) {
+    reason   = `Need ${MIN - resolved.length} more resolved trades (${resolved.length}/${MIN})`;
+    progress = (resolved.length / MIN) * 100;
+  } else if (hitRate < MIN_HR) {
+    verdict  = "not-ready";
+    reason   = `Hit rate ${hitRate.toFixed(1)}% below minimum ${MIN_HR}%`;
+    progress = (hitRate / MIN_HR) * 100;
+  } else {
+    verdict  = "ready";
+    reason   = `${resolved.length} resolved trades, ${hitRate.toFixed(1)}% hit rate — capital deployment approved`;
+    progress = 100;
+  }
+
+  return {
+    resolved, pending, wins, pnl, hitRate, kellyUnit, curve, avgReturn,
+    byType: { edge: typeStats("edge"), newslag: typeStats("newslag"), correlation: typeStats("correlation") },
+    verdict, reason, progress,
+  };
+}
+
+// ─── RENDER ────────────────────────────────────────────────────────────────
+function pnlColor(v) { return v > 0 ? "var(--green)" : v < 0 ? "var(--red)" : "var(--dim)"; }
+function pnlStr(v)   { return v >= 0 ? `+$${v.toFixed(2)}` : `-$${Math.abs(v).toFixed(2)}`; }
+function hitStr(v)   { return v === null ? "N/A" : `${v.toFixed(1)}%`; }
+
+function drawCurve(canvasId, curve) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+  const W = canvas.offsetWidth, H = canvas.offsetHeight;
+  canvas.width = W; canvas.height = H;
+
+  if (!curve.length) {
+    ctx.fillStyle = "#ffffff10";
+    ctx.font = "12px DM Mono";
+    ctx.fillText("No resolved trades yet", W / 2 - 80, H / 2);
+    return;
+  }
+
+  const pts  = [0, ...curve];
+  const minV = Math.min(...pts), maxV = Math.max(...pts);
+  const range = maxV - minV || 1;
+  const pad   = { t: 20, b: 20, l: 40, r: 16 };
+  const iW    = W - pad.l - pad.r, iH = H - pad.t - pad.b;
+
+  const x = i => pad.l + (i / (pts.length - 1)) * iW;
+  const y = v => pad.t + iH - ((v - minV) / range) * iH;
+
+  // Zero line
+  ctx.beginPath();
+  ctx.strokeStyle = "#ffffff15";
+  ctx.lineWidth   = 1;
+  ctx.setLineDash([4, 4]);
+  ctx.moveTo(pad.l, y(0)); ctx.lineTo(pad.l + iW, y(0));
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  // Fill
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, curve[curve.length - 1] >= 0 ? "#00ff8830" : "#ff335530");
+  grad.addColorStop(1, "transparent");
+  ctx.beginPath();
+  ctx.moveTo(x(0), y(0));
+  pts.forEach((v, i) => ctx.lineTo(x(i), y(v)));
+  ctx.lineTo(x(pts.length - 1), H); ctx.lineTo(pad.l, H);
+  ctx.closePath();
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Line
+  ctx.beginPath();
+  ctx.strokeStyle = curve[curve.length - 1] >= 0 ? "#00ff88" : "#ff3355";
+  ctx.lineWidth   = 2;
+  pts.forEach((v, i) => i === 0 ? ctx.moveTo(x(i), y(v)) : ctx.lineTo(x(i), y(v)));
+  ctx.stroke();
+
+  // Y axis labels
+  ctx.fillStyle = "#484870";
+  ctx.font      = "10px DM Mono";
+  ctx.textAlign = "right";
+  [minV, 0, maxV].forEach(v => {
+    ctx.fillText(pnlStr(v), pad.l - 4, y(v) + 4);
+  });
+}
+
+function render(data) {
+  const s   = calcStats(data.trades || []);
+  const now = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata", hour12: false });
+  document.getElementById("last-updated").innerHTML = `Updated ${now} IST`;
+
+  const verdictLabels = { "not-ready": "🔴 NOT READY", "partial": "⚠️ PARTIAL", "ready": "✅ GO LIVE" };
+  const progressColor = { "not-ready": "var(--red)", "partial": "var(--amber)", "ready": "var(--green)" };
+
+  document.getElementById("root").innerHTML = `
+
+    <!-- Verdict -->
+    <div class="verdict ${s.verdict}">
+      <div class="verdict-label">${verdictLabels[s.verdict]}</div>
+      <div class="verdict-detail">
+        <div class="verdict-reason">${s.reason}</div>
+        <div class="verdict-progress">
+          <div style="font-size:9px;color:var(--dim);letter-spacing:1px;margin-bottom:4px;">
+            VALIDATION PROGRESS — ${Math.round(s.progress)}%
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width:${s.progress}%;background:${progressColor[s.verdict]}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="stats-row">
+      <div class="stat" style="--accent:var(--blue)">
+        <div class="stat-label">Trades Resolved</div>
+        <div class="stat-value" style="color:var(--blue)">${s.resolved.length}</div>
+        <div class="stat-sub">${s.pending.length} still pending</div>
+      </div>
+      <div class="stat" style="--accent:${s.hitRate >= 55 ? 'var(--green)' : s.hitRate >= 40 ? 'var(--amber)' : 'var(--red)'}">
+        <div class="stat-label">Hit Rate</div>
+        <div class="stat-value" style="color:${s.hitRate >= 55 ? 'var(--green)' : s.hitRate >= 40 ? 'var(--amber)' : 'var(--red)'}">${hitStr(s.hitRate)}</div>
+        <div class="stat-sub">Min. required: 55%</div>
+      </div>
+      <div class="stat" style="--accent:${s.pnl >= 0 ? 'var(--green)' : 'var(--red)'}">
+        <div class="stat-label">Paper P&L</div>
+        <div class="stat-value" style="color:${s.pnl >= 0 ? 'var(--green)' : 'var(--red)'}">${pnlStr(s.pnl)}</div>
+        <div class="stat-sub">per $1 unit bet</div>
+      </div>
+      <div class="stat" style="--accent:var(--amber)">
+        <div class="stat-label">Kelly Unit Size</div>
+        <div class="stat-value" style="color:var(--amber)">${s.kellyUnit > 0 ? (s.kellyUnit * 100).toFixed(1) + "%" : "N/A"}</div>
+        <div class="stat-sub">quarter-Kelly of bankroll</div>
+      </div>
+    </div>
+
+    <!-- Signal type cards -->
+    <div class="sig-cards">
+      ${[
+        { key: "edge",        label: "📈 Edge Scanner",       color: "var(--green)" },
+        { key: "newslag",     label: "⚡ News Lag",           color: "var(--amber)" },
+        { key: "correlation", label: "🔀 Correlation",        color: "var(--blue)"  },
+      ].map(({ key, label, color }) => {
+        const st = s.byType[key];
+        const hr = st.hitRate !== null ? st.hitRate.toFixed(1) + "%" : "N/A";
+        const barW = st.hitRate !== null ? Math.min(st.hitRate, 100) : 0;
+        return `
+        <div class="sig-card" style="--sig-color:${color}">
+          <div class="sig-name">${label}</div>
+          <div class="sig-hit">${hr}</div>
+          <div class="sig-bar"><div class="sig-bar-fill" style="width:${barW}%"></div></div>
+          <div class="sig-meta">
+            <div class="sig-meta-item">
+              <div class="sig-meta-label">W / L</div>
+              <div class="sig-meta-val">${st.wins}W / ${st.losses}L</div>
+            </div>
+            <div class="sig-meta-item">
+              <div class="sig-meta-label">P&L</div>
+              <div class="sig-meta-val" style="color:${st.pnl >= 0 ? 'var(--green)' : 'var(--red)'}">${pnlStr(st.pnl)}</div>
+            </div>
+            <div class="sig-meta-item">
+              <div class="sig-meta-label">Trades</div>
+              <div class="sig-meta-val">${st.total}</div>
+            </div>
+            <div class="sig-meta-item">
+              <div class="sig-meta-label">Min Bar</div>
+              <div class="sig-meta-val" style="color:var(--dim)">${key === "newslag" ? "58%" : "55%"}</div>
+            </div>
+          </div>
+        </div>`;
+      }).join("")}
+    </div>
+
+    <!-- P&L curve + Trade log -->
+    <div class="two-col">
+      <div class="panel">
+        <div class="panel-hdr">
+          <span class="panel-title">Paper P&L Equity Curve</span>
+          <span class="panel-badge">${s.resolved.length} trades</span>
+        </div>
+        <div class="panel-body" style="padding:16px 16px 8px">
+          <canvas id="pnl-chart"></canvas>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-hdr">
+          <span class="panel-title">Recent Trades</span>
+          <span class="panel-badge">last 12</span>
+        </div>
+        <div class="panel-body" style="padding:8px 16px">
+          ${[...data.trades].reverse().slice(0, 12).map(t => {
+            const icon    = t.status === "WIN" ? "✅" : t.status === "LOSS" ? "❌" : "○";
+            const pnlDisp = t.paperPnl !== null
+              ? `<span style="color:${t.paperPnl >= 0 ? 'var(--green)' : 'var(--red)'}">${pnlStr(t.paperPnl)}</span>`
+              : `<span style="color:var(--dim)">–</span>`;
+            const dirColor = t.direction === "YES" ? "var(--green)" : t.direction === "NO" ? "var(--red)" : "var(--dim)";
+            return `<div class="trade-row">
+              <div class="trade-status">${icon}</div>
+              <div class="trade-q" title="${t.question}">${t.question}</div>
+              <div class="trade-dir" style="color:${dirColor}">${t.direction || "–"}</div>
+              <div class="trade-pnl">${pnlDisp}</div>
+            </div>`;
+          }).join("") || '<div style="color:var(--dim);padding:20px 0;text-align:center">No trades logged yet</div>'}
+        </div>
+      </div>
+    </div>
+
+    <!-- Capital calculator -->
+    <div class="panel" style="margin-top:16px">
+      <div class="panel-hdr">
+        <span class="panel-title">Capital Sizing Calculator</span>
+        <span class="panel-badge">Quarter-Kelly</span>
+      </div>
+      <div class="panel-body">
+        <div class="kelly-calc">
+          <div class="kelly-row">
+            <div class="kelly-label">Bankroll (₹)</div>
+            <input class="kelly-input" id="bankroll" type="number" value="50000" min="1000" oninput="updateKelly()">
+          </div>
+          <div class="kelly-row">
+            <div class="kelly-label">Override hit rate</div>
+            <input class="kelly-input" id="override-hr" type="number" placeholder="Use live data (${hitStr(s.hitRate)})" min="1" max="100" oninput="updateKelly()">
+          </div>
+          <div id="kelly-result" class="kelly-result"></div>
+        </div>
+      </div>
+    </div>
+
+  `;
+
+  // Draw chart after render
+  setTimeout(() => drawCurve("pnl-chart", s.curve), 50);
+
+  // Kelly calculator
+  window._stats = s;
+  updateKelly();
+}
+
+function updateKelly() {
+  const s        = window._stats;
+  if (!s) return;
+  const bankroll = parseFloat(document.getElementById("bankroll")?.value) || 50000;
+  const hrInput  = parseFloat(document.getElementById("override-hr")?.value);
+  const hr       = hrInput || s.hitRate;
+  const avgRet   = s.avgReturn || 0.25; // fallback 25% avg return
+
+  let kelly = 0;
+  if (hr && avgRet > 0) {
+    const p = hr / 100, q = 1 - p, b = avgRet;
+    kelly = Math.max(0, Math.min(((b * p - q) / b) * 0.25, 0.05));
+  }
+
+  const unit       = bankroll * kelly;
+  const maxBets    = kelly > 0 ? Math.floor(bankroll / unit) : 0;
+  const projReturn = kelly > 0 ? (unit * (hr / 100) * avgRet - unit * (1 - hr / 100)).toFixed(0) : 0;
+
+  const el = document.getElementById("kelly-result");
+  if (!el) return;
+
+  if (kelly === 0) {
+    el.innerHTML = `<div style="color:var(--dim);font-size:12px">Not enough validated data for Kelly sizing. Continue paper trading.</div>`;
+    return;
+  }
+
+  el.innerHTML = `
+    <div class="kelly-result-row">
+      <span class="kelly-result-label">Unit size per bet (quarter-Kelly)</span>
+      <span class="kelly-result-val">₹${Math.round(unit).toLocaleString("en-IN")} (${(kelly * 100).toFixed(1)}%)</span>
+    </div>
+    <div class="kelly-result-row">
+      <span class="kelly-result-label">Max simultaneous open positions</span>
+      <span class="kelly-result-val">${maxBets} bets</span>
+    </div>
+    <div class="kelly-result-row">
+      <span class="kelly-result-label">Expected value per bet cycle</span>
+      <span class="kelly-result-val" style="color:${projReturn >= 0 ? 'var(--green)' : 'var(--red)'}">₹${Math.abs(projReturn).toLocaleString("en-IN")} ${projReturn >= 0 ? "profit" : "loss"}</span>
+    </div>
+    <div style="margin-top:10px;font-size:10px;color:var(--dim)">
+      Based on ${hitStr(hr)} hit rate × ${(avgRet * 100).toFixed(0)}% avg win. Kelly caps at 5% of bankroll per position.
+    </div>
+  `;
+}
+
+// ─── BOOT ──────────────────────────────────────────────────────────────────
+async function boot() {
+  // Check if user has configured the GitHub details
+  if (GITHUB_USER === "YOUR_GITHUB_USERNAME") {
+    document.getElementById("config-banner").style.display = "block";
+  }
+
+  try {
+    const res  = await fetch(TRADES_URL + "?t=" + Date.now());
+    if (!res.ok) throw new Error(`HTTP ${res.status} — check GITHUB_USER and GITHUB_REPO`);
+    const data = await res.json();
+    render(data);
+  } catch (err) {
+    document.getElementById("root").innerHTML = `
+      <div class="error-box">
+        <b>Could not load trades.json</b><br><br>
+        ${err.message}<br><br>
+        Make sure:<br>
+        1. <code>GITHUB_USER</code> and <code>GITHUB_REPO</code> are set correctly at the top of this file<br>
+        2. Your repo is public (or you're on GitHub Pages with a public repo)<br>
+        3. GitHub Pages is enabled in repo Settings → Pages → Source: main branch
+      </div>`;
+  }
+}
+
+boot();
+</script>
+</body>
+</html>
