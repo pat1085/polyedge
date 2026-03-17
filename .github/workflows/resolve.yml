@@ -1,0 +1,53 @@
+name: Poly Edge Resolver
+
+on:
+  schedule:
+    # Runs once daily at 08:00 UTC (1:30 PM IST)
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run without saving or sending Telegram"
+        required: false
+        default: "false"
+        type: boolean
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run resolver
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
+            node resolver.js --dry-run
+          else
+            node resolver.js
+          fi
+
+      - name: Commit updated trades.json
+        run: |
+          git config --global user.name  "polyedge-bot"
+          git config --global user.email "polyedge-bot@users.noreply.github.com"
+          git add trades.json || true
+          git diff --staged --quiet || git commit -m "chore: resolve paper trades [skip ci]"
+          git push
