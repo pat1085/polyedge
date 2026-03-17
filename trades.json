@@ -402,6 +402,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 32.6pts at alert time"
+    },
+    {
+      "id": "corr_958442_567687_1773763078070",
+      "marketId": "958442+567687",
+      "question": "[CORR] Will the Iranian regime fall by March 31? vs Russia x Ukraine ceasefire by end of 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0465,
+      "entryPriceB": 0.365,
+      "pricingGap": 31.85,
+      "alertedAt": "2026-03-17T15:57:58.070Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 31.9pts at alert time"
     }
   ]
 }
