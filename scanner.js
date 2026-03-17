@@ -86,10 +86,9 @@ if (m.volume < MIN_VOLUME) return false;
 const p = parsePrice(m.outcomePrices);
 if (p <= 0.01 || p >= 0.99) return false;
     if (m.endDate) {
-      const days = daysUntil(m.endDate);
-      if (days > MAX_DAYS_TO_RESOLVE) return false;
-      if (days < 0) return false;
-    }
+  const days = daysUntil(m.endDate);
+  if (days > MAX_DAYS_TO_RESOLVE) return false;
+}
     return true;
   }).map(m => {
     const price   = parsePrice(m.outcomePrices);
