@@ -21,10 +21,10 @@
       "volume": 99.99000000000001,
       "liquidity": 0,
       "alertedAt": "2026-03-17T14:15:44.042Z",
-      "status": "PENDING",
-      "outcome": null,
-      "resolvedAt": null,
-      "paperPnl": null,
+      "status": "LOSS",
+      "outcome": "YES",
+      "resolvedAt": "2026-03-17T15:24:53.990Z",
+      "paperPnl": -1,
       "notes": ""
     },
     {
@@ -65,10 +65,10 @@
       "volume": 99.99000000000001,
       "liquidity": 0,
       "alertedAt": "2026-03-17T14:15:49.795Z",
-      "status": "PENDING",
-      "outcome": null,
-      "resolvedAt": null,
-      "paperPnl": null,
+      "status": "LOSS",
+      "outcome": "YES",
+      "resolvedAt": "2026-03-17T15:24:54.625Z",
+      "paperPnl": -1,
       "notes": ""
     },
     {
