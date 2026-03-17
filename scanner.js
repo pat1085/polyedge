@@ -14,9 +14,9 @@ const TELEGRAM_BOT_TOKEN   = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID     = process.env.TELEGRAM_CHAT_ID;
 
 const MIN_EDGE_RETURN_PCT  = 20;
-const MIN_LIQUIDITY        = 15000;
+const MIN_LIQUIDITY        = 5000;   // lowered -- Gamma API returns floats
 const VOL_LIQ_RATIO_THRESH = 3.0;
-const MAX_DAYS_TO_RESOLVE  = 90;
+const MAX_DAYS_TO_RESOLVE  = 180;   // widened -- some markets have no endDate
 const CORR_GAP_THRESH      = 20;
 
 const STATE_FILE = "./alerted.json";
@@ -29,6 +29,7 @@ function parsePrice(priceStr) {
 }
 
 function daysUntil(dateStr) {
+  if (!dateStr) return 60; // default if missing
   return (new Date(dateStr) - new Date()) / 86400000;
 }
 
@@ -50,20 +51,45 @@ function calcEdge(price, liquidity, volume, endDate) {
   return { betPrice, returnPct, edgeScore, daysLeft, volLiqRatio, direction };
 }
 
+// Normalize field names -- Gamma API has multiple variants
+function normalizeMarket(m) {
+  return {
+    ...m,
+    id:            m.id || m.condition_id || String(Math.random()),
+    question:      m.question || m.title || "Unknown market",
+    slug:          m.slug || m.market_slug || "",
+    category:      m.category || m.tags?.[0]?.label || "General",
+    active:        m.active ?? true,
+    outcomePrices: m.outcomePrices || m.outcome_prices || null,
+    liquidity:     parseFloat(m.liquidity || 0),
+    volume:        parseFloat(m.volume || 0),
+    endDate:       m.endDate || m.end_date_iso || m.endDateIso || m.game_start_time || null,
+  };
+}
+
 function processMarkets(raw) {
-  return raw
-    .filter(m =>
-      m.outcomePrices &&
-      m.active &&
-      (m.liquidity || 0) >= MIN_LIQUIDITY &&
-      daysUntil(m.endDate) <= MAX_DAYS_TO_RESOLVE &&
-      daysUntil(m.endDate) > 0
-    )
-    .map(m => {
-      const price   = parsePrice(m.outcomePrices);
-      const metrics = calcEdge(price, m.liquidity, m.volume, m.endDate);
-      return { ...m, price, ...metrics };
-    });
+  const normalized = raw.map(normalizeMarket);
+
+  // Debug: log first market shape to diagnose field names
+  if (normalized.length > 0) {
+    const sample = normalized[0];
+    console.log(`Sample market fields: active=${sample.active}, liquidity=${sample.liquidity}, endDate=${sample.endDate}, outcomePrices=${sample.outcomePrices ? "present" : "null"}`);
+  }
+
+  return normalized.filter(m => {
+    if (!m.outcomePrices) return false;
+    if (m.liquidity < MIN_LIQUIDITY) return false;
+    if (m.endDate) {
+      const days = daysUntil(m.endDate);
+      if (days > MAX_DAYS_TO_RESOLVE) return false;
+      if (days < 0) return false;
+    }
+    return true;
+  }).map(m => {
+    const price   = parsePrice(m.outcomePrices);
+    const metrics = calcEdge(price, m.liquidity, m.volume, m.endDate);
+    return { ...m, price, ...metrics };
+  });
 }
 
 // ─── STATE ─────────────────────────────────────────────────────────────────
@@ -164,8 +190,8 @@ function summaryAlert(edgeCount, lagCount, corrCount, topReturn, stats) {
     ? `\n📊 Paper hit rate: <b>${stats.hitRate.toFixed(1)}%</b> (${stats.resolved} resolved)`
     : `\n📊 Paper trades logged: <b>${stats.total}</b> (awaiting resolution)`;
 
-  const needed      = Math.max(0, 40 - stats.resolved);
-  const readyLine   = stats.readyForLive
+  const needed    = Math.max(0, 40 - stats.resolved);
+  const readyLine = stats.readyForLive
     ? `\n\n✅ <b>System validated. Ready to evaluate live capital.</b>`
     : `\n⏳ ${needed} more resolved trades needed before live eval.`;
 
@@ -183,19 +209,14 @@ function summaryAlert(edgeCount, lagCount, corrCount, topReturn, stats) {
 
 // ─── SCANNERS ──────────────────────────────────────────────────────────────
 function scanEdge(markets, state) {
-  const hits    = markets
-    .filter(m => m.returnPct >= MIN_EDGE_RETURN_PCT)
-    .sort((a, b) => b.edgeScore - a.edgeScore);
+  const hits    = markets.filter(m => m.returnPct >= MIN_EDGE_RETURN_PCT).sort((a, b) => b.edgeScore - a.edgeScore);
   const newHits = hits.filter(m => !alreadyAlerted(state, `edge_${m.id}`));
   newHits.forEach(m => markAlerted(state, `edge_${m.id}`));
   return { all: hits, newHits };
 }
 
 function scanNewsLag(markets, state) {
-  const hits    = markets
-    .filter(m => m.volLiqRatio >= VOL_LIQ_RATIO_THRESH && m.daysLeft <= 60)
-    .sort((a, b) => b.volLiqRatio - a.volLiqRatio)
-    .slice(0, 5);
+  const hits    = markets.filter(m => m.volLiqRatio >= VOL_LIQ_RATIO_THRESH && m.daysLeft <= 60).sort((a, b) => b.volLiqRatio - a.volLiqRatio).slice(0, 5);
   const newHits = hits.filter(m => !alreadyAlerted(state, `lag_${m.id}`));
   newHits.forEach(m => markAlerted(state, `lag_${m.id}`));
   return { all: hits, newHits };
@@ -238,6 +259,12 @@ async function main() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     rawMarkets = await res.json();
     console.log(`Fetched ${rawMarkets.length} markets`);
+
+    // Log raw field names from first market for debugging
+    if (rawMarkets.length > 0) {
+      const keys = Object.keys(rawMarkets[0]);
+      console.log(`Raw market keys: ${keys.join(", ")}`);
+    }
   } catch (err) {
     console.error("Fetch failed:", err.message);
     await sendTelegram(`⚠️ <b>POLY // EDGE — Fetch Error</b>\n\n${err.message}`);
@@ -294,16 +321,14 @@ async function main() {
   const todayKey = `summary_${new Date().toISOString().slice(0, 10)}`;
 
   if (sent > 0 || !alreadyAlerted(state, todayKey)) {
-    await sendTelegram(summaryAlert(
-      edge.all.length, lag.all.length, corr.all.length, topReturn, stats
-    ));
+    await sendTelegram(summaryAlert(edge.all.length, lag.all.length, corr.all.length, topReturn, stats));
     markAlerted(state, todayKey);
   }
 
   // 6. Persist
   saveState(state);
 
-  console.log(`\nDone. ${sent} new alert(s). ${tradeData.trades.length} total paper trades logged.`);
+  console.log(`\nDone. ${sent} alert(s). ${tradeData.trades.length} total paper trades logged.`);
 }
 
 main().catch(err => {
