@@ -419,6 +419,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 31.9pts at alert time"
+    },
+    {
+      "id": "corr_566737_567687_1773767027674",
+      "marketId": "566737+567687",
+      "question": "[CORR] Will Lens win the 2025–26 French Ligue 1? vs Russia x Ukraine ceasefire by end of 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.057,
+      "entryPriceB": 0.365,
+      "pricingGap": 30.8,
+      "alertedAt": "2026-03-17T17:03:47.674Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 30.8pts at alert time"
     }
   ]
 }
