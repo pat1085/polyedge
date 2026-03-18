@@ -514,6 +514,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 27.7pts at alert time"
+    },
+    {
+      "id": "edge_1466015_1773852763021",
+      "marketId": "1466015",
+      "question": "US x Iran ceasefire by March 31?",
+      "slug": "us-x-iran-ceasefire-by-march-31",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.075,
+      "impliedReturn": 1233.3333333333335,
+      "edgeScore": 99,
+      "endDate": null,
+      "daysLeft": 60,
+      "volume": 11498066.744625,
+      "liquidity": 11498066.744625,
+      "alertedAt": "2026-03-18T16:52:43.021Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_567687_1466015_1773852764095",
+      "marketId": "567687+1466015",
+      "question": "[CORR] Russia x Ukraine ceasefire by end of 2026? vs US x Iran ceasefire by March 31?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.355,
+      "entryPriceB": 0.075,
+      "pricingGap": 27.999999999999996,
+      "alertedAt": "2026-03-18T16:52:44.095Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 28.0pts at alert time"
     }
   ]
 }
