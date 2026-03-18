@@ -458,6 +458,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_997488_567687_1773827104460",
+      "marketId": "997488+567687",
+      "question": "[CORR] Will Trump acquire Greenland before 2027? vs Russia x Ukraine ceasefire by end of 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.096,
+      "entryPriceB": 0.355,
+      "pricingGap": 25.900000000000002,
+      "alertedAt": "2026-03-18T09:45:04.460Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 25.9pts at alert time"
     }
   ]
 }
