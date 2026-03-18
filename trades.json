@@ -475,6 +475,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 25.9pts at alert time"
+    },
+    {
+      "id": "edge_1162940_1773838429835",
+      "marketId": "1162940",
+      "question": "US forces enter Iran by March 31?",
+      "slug": "us-forces-enter-iran-by-march-31-222-191-243-517-878-439-519",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.315,
+      "impliedReturn": 217.46031746031744,
+      "edgeScore": 28.269841269841272,
+      "endDate": "2026-03-01T00:00:00Z",
+      "daysLeft": -17.53738232638889,
+      "volume": 11417121.972303338,
+      "liquidity": 11417121.972303338,
+      "alertedAt": "2026-03-18T12:53:49.835Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_703258_1162940_1773838430959",
+      "marketId": "703258+1162940",
+      "question": "[CORR] Will Jesus Christ return before 2027? vs US forces enter Iran by March 31?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0385,
+      "entryPriceB": 0.315,
+      "pricingGap": 27.650000000000002,
+      "alertedAt": "2026-03-18T12:53:50.959Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 27.7pts at alert time"
     }
   ]
 }
