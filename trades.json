@@ -660,6 +660,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 39.2pts at alert time"
+    },
+    {
+      "id": "edge_564163_1773898835333",
+      "marketId": "564163",
+      "question": "Will Luka Doncic win the 2025–2026 NBA MVP?",
+      "slug": "will-luka-doncic-win-the-20252026-nba-mvp",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.035,
+      "impliedReturn": 2757.142857142857,
+      "edgeScore": 99,
+      "endDate": "2026-06-10T00:00:00Z",
+      "daysLeft": 82.76347995370371,
+      "volume": 12309948.690602904,
+      "liquidity": 12309948.690602904,
+      "alertedAt": "2026-03-19T05:40:35.333Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_564163_663583_1773898836422",
+      "marketId": "564163+663583",
+      "question": "[CORR] Will Luka Doncic win the 2025–2026 NBA MVP? vs Will the Iranian regime fall before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.035,
+      "entryPriceB": 0.425,
+      "pricingGap": 39,
+      "alertedAt": "2026-03-19T05:40:36.422Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 39.0pts at alert time"
     }
   ]
 }
