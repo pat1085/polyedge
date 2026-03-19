@@ -643,6 +643,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 36.0pts at alert time"
+    },
+    {
+      "id": "corr_958442_663583_1773893032888",
+      "marketId": "958442+663583",
+      "question": "[CORR] Will the Iranian regime fall by March 31? vs Will the Iranian regime fall before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.033,
+      "entryPriceB": 0.425,
+      "pricingGap": 39.2,
+      "alertedAt": "2026-03-19T04:03:52.888Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 39.2pts at alert time"
     }
   ]
 }
