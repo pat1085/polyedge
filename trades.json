@@ -699,6 +699,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 39.0pts at alert time"
+    },
+    {
+      "id": "corr_1484949_663583_1773929057605",
+      "marketId": "1484949+663583",
+      "question": "[CORR] Netanyahu out by March 31? vs Will the Iranian regime fall before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.031,
+      "entryPriceB": 0.395,
+      "pricingGap": 36.4,
+      "alertedAt": "2026-03-19T14:04:17.605Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 36.4pts at alert time"
     }
   ]
 }
