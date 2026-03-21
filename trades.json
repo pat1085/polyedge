@@ -733,6 +733,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 29.0pts at alert time"
+    },
+    {
+      "id": "corr_997488_663583_1774136737888",
+      "marketId": "997488+663583",
+      "question": "[CORR] Will Trump acquire Greenland before 2027? vs Will the Iranian regime fall before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0875,
+      "entryPriceB": 0.375,
+      "pricingGap": 28.749999999999996,
+      "alertedAt": "2026-03-21T23:45:37.888Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 28.7pts at alert time"
     }
   ]
 }
