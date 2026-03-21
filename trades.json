@@ -43,10 +43,10 @@
       "volume": 999.98,
       "liquidity": 371.6113,
       "alertedAt": "2026-03-17T14:15:48.946Z",
-      "status": "PENDING",
-      "outcome": null,
-      "resolvedAt": null,
-      "paperPnl": null,
+      "status": "LOSS",
+      "outcome": "YES",
+      "resolvedAt": "2026-03-21T08:44:16.991Z",
+      "paperPnl": -1,
       "notes": ""
     },
     {
