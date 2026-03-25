@@ -1021,6 +1021,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_1466015_1774461308973",
+      "marketId": "1466015",
+      "question": "US x Iran ceasefire by March 31?",
+      "slug": "us-x-iran-ceasefire-by-march-31",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.135,
+      "impliedReturn": 640.7407407407406,
+      "edgeScore": 64.07407407407406,
+      "endDate": null,
+      "daysLeft": 60,
+      "volume": 29385099.896169245,
+      "liquidity": 29385099.896169245,
+      "alertedAt": "2026-03-25T17:55:08.973Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
