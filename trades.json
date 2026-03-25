@@ -999,6 +999,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_1162940_1774453350444",
+      "marketId": "1162940",
+      "question": "US forces enter Iran by March 31?",
+      "slug": "us-forces-enter-iran-by-march-31-222-191-243-517-878-439-519",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.155,
+      "impliedReturn": 545.1612903225807,
+      "edgeScore": 70.8709677419355,
+      "endDate": "2026-03-31T00:00:00Z",
+      "daysLeft": 5.34548099537037,
+      "volume": 20624716.10842935,
+      "liquidity": 20624716.10842935,
+      "alertedAt": "2026-03-25T15:42:30.444Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
