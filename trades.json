@@ -1177,6 +1177,40 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 30.8pts at alert time"
+    },
+    {
+      "id": "corr_564163_1467766_1774514709068",
+      "marketId": "564163+1467766",
+      "question": "[CORR] Will Luka Doncic win the 2025–2026 NBA MVP? vs Will Crude Oil (CL) hit (HIGH) $100 by end of March?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.082,
+      "entryPriceB": 0.419,
+      "pricingGap": 33.699999999999996,
+      "alertedAt": "2026-03-26T08:45:09.068Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 33.7pts at alert time"
+    },
+    {
+      "id": "corr_997488_1467766_1774514710312",
+      "marketId": "997488+1467766",
+      "question": "[CORR] Will Trump acquire Greenland before 2027? vs Will Crude Oil (CL) hit (HIGH) $100 by end of March?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.091,
+      "entryPriceB": 0.419,
+      "pricingGap": 32.8,
+      "alertedAt": "2026-03-26T08:45:10.313Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 32.8pts at alert time"
     }
   ]
 }
