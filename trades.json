@@ -1043,6 +1043,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_1467766_1774490339110",
+      "marketId": "1467766",
+      "question": "Will Crude Oil (CL) hit (HIGH) $100 by end of March?",
+      "slug": "will-crude-oil-cl-hit-high-100-by-end-of-march-658-396-769-971",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.298,
+      "impliedReturn": 235.5704697986577,
+      "edgeScore": 30.6241610738255,
+      "endDate": "2026-03-31T00:00:00Z",
+      "daysLeft": 4.917371423611111,
+      "volume": 11637309.17211398,
+      "liquidity": 11637309.17211398,
+      "alertedAt": "2026-03-26T01:58:59.111Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
