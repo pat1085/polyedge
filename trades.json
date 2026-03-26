@@ -1211,6 +1211,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 32.8pts at alert time"
+    },
+    {
+      "id": "edge_561986_1774535093945",
+      "marketId": "561986",
+      "question": "Will Byron Donalds win the 2028 Republican presidential nomination?",
+      "slug": "will-byron-donalds-win-the-2028-republican-presidential-nomination",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0595,
+      "impliedReturn": 1580.6722689075632,
+      "edgeScore": 99,
+      "endDate": "2028-11-07T00:00:00Z",
+      "daysLeft": 956.3993756481482,
+      "volume": 31386177.486644894,
+      "liquidity": 31386177.486644894,
+      "alertedAt": "2026-03-26T14:24:53.945Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_561986_1467766_1774535095081",
+      "marketId": "561986+1467766",
+      "question": "[CORR] Will Byron Donalds win the 2028 Republican presidential nomi vs Will Crude Oil (CL) hit (HIGH) $100 by end of March?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0595,
+      "entryPriceB": 0.399,
+      "pricingGap": 33.95,
+      "alertedAt": "2026-03-26T14:24:55.081Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 34.0pts at alert time"
     }
   ]
 }
