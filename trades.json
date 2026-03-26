@@ -1250,6 +1250,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 34.0pts at alert time"
+    },
+    {
+      "id": "corr_1466015_1467766_1774551470673",
+      "marketId": "1466015+1467766",
+      "question": "[CORR] US x Iran ceasefire by March 31? vs Will Crude Oil (CL) hit (HIGH) $100 by end of March?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.085,
+      "entryPriceB": 0.428,
+      "pricingGap": 34.3,
+      "alertedAt": "2026-03-26T18:57:50.673Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 34.3pts at alert time"
     }
   ]
 }
