@@ -1267,6 +1267,40 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 34.3pts at alert time"
+    },
+    {
+      "id": "corr_1466015_663583_1774585738858",
+      "marketId": "1466015+663583",
+      "question": "[CORR] US x Iran ceasefire by March 31? vs Will the Iranian regime fall before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.045,
+      "entryPriceB": 0.345,
+      "pricingGap": 30,
+      "alertedAt": "2026-03-27T04:28:58.858Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 30.0pts at alert time"
+    },
+    {
+      "id": "corr_561986_663583_1774585740063",
+      "marketId": "561986+663583",
+      "question": "[CORR] Will Byron Donalds win the 2028 Republican presidential nomi vs Will the Iranian regime fall before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0495,
+      "entryPriceB": 0.345,
+      "pricingGap": 29.549999999999997,
+      "alertedAt": "2026-03-27T04:29:00.063Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 29.5pts at alert time"
     }
   ]
 }
