@@ -1301,6 +1301,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 29.5pts at alert time"
+    },
+    {
+      "id": "corr_1467766_564163_1774640214279",
+      "marketId": "1467766+564163",
+      "question": "[CORR] Will Crude Oil (CL) hit (HIGH) $100 by end of March? vs Will Luka Doncic win the 2025–2026 NBA MVP?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.6645,
+      "entryPriceB": 0.0475,
+      "pricingGap": 61.7,
+      "alertedAt": "2026-03-27T19:36:54.279Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 61.7pts at alert time"
     }
   ]
 }
