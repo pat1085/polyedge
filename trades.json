@@ -1318,6 +1318,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 61.7pts at alert time"
+    },
+    {
+      "id": "edge_1507751_1774683614205",
+      "marketId": "1507751",
+      "question": "Will the Iranian regime fall by April 30?",
+      "slug": "will-the-iranian-regime-fall-by-april-30",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.075,
+      "impliedReturn": 1233.3333333333335,
+      "edgeScore": 99,
+      "endDate": "2026-04-30T00:00:00Z",
+      "daysLeft": 32.680391157407406,
+      "volume": 11879618.237058148,
+      "liquidity": 11879618.237058148,
+      "alertedAt": "2026-03-28T07:40:14.206Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_1467766_1507751_1774683615346",
+      "marketId": "1467766+1507751",
+      "question": "[CORR] Will Crude Oil (CL) hit (HIGH) $100 by end of March? vs Will the Iranian regime fall by April 30?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.728,
+      "entryPriceB": 0.075,
+      "pricingGap": 65.3,
+      "alertedAt": "2026-03-28T07:40:15.346Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 65.3pts at alert time"
     }
   ]
 }
