@@ -1374,6 +1374,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 66.0pts at alert time"
+    },
+    {
+      "id": "corr_1467766_566737_1774701487052",
+      "marketId": "1467766+566737",
+      "question": "[CORR] Will Crude Oil (CL) hit (HIGH) $100 by end of March? vs Will Lens win the 2025–26 French Ligue 1?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.757,
+      "entryPriceB": 0.068,
+      "pricingGap": 68.9,
+      "alertedAt": "2026-03-28T12:38:07.052Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 68.9pts at alert time"
     }
   ]
 }
