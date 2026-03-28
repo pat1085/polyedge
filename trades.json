@@ -1357,6 +1357,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 65.3pts at alert time"
+    },
+    {
+      "id": "corr_1162940_1467766_1774690168687",
+      "marketId": "1162940+1467766",
+      "question": "[CORR] US forces enter Iran by March 31? vs Will Crude Oil (CL) hit (HIGH) $100 by end of March?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.075,
+      "entryPriceB": 0.7345,
+      "pricingGap": 65.95,
+      "alertedAt": "2026-03-28T09:29:28.687Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 66.0pts at alert time"
     }
   ]
 }
