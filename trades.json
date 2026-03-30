@@ -1391,6 +1391,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 68.9pts at alert time"
+    },
+    {
+      "id": "corr_1162940_567687_1774891603780",
+      "marketId": "1162940+567687",
+      "question": "[CORR] US forces enter Iran by March 31? vs Russia x Ukraine ceasefire by end of 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.046,
+      "entryPriceB": 0.285,
+      "pricingGap": 23.9,
+      "alertedAt": "2026-03-30T17:26:43.780Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 23.9pts at alert time"
     }
   ]
 }
