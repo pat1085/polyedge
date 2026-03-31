@@ -1442,6 +1442,40 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 26.0pts at alert time"
+    },
+    {
+      "id": "corr_559652_564163_1774961971445",
+      "marketId": "559652+564163",
+      "question": "[CORR] Will Gavin Newsom win the 2028 Democratic presidential nomin vs Will Luka Doncic win the 2025–2026 NBA MVP?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.242,
+      "entryPriceB": 0.0345,
+      "pricingGap": 20.75,
+      "alertedAt": "2026-03-31T12:59:31.445Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.8pts at alert time"
+    },
+    {
+      "id": "corr_703258_559652_1774961972710",
+      "marketId": "703258+559652",
+      "question": "[CORR] Will Jesus Christ return before 2027? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0385,
+      "entryPriceB": 0.242,
+      "pricingGap": 20.349999999999998,
+      "alertedAt": "2026-03-31T12:59:32.710Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.3pts at alert time"
     }
   ]
 }
