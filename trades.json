@@ -1781,6 +1781,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_1640919_566737_1775039584987",
+      "marketId": "1640919+566737",
+      "question": "[CORR] US forces enter Iran by April 30? vs Will Lens win the 2025–26 French Ligue 1?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.565,
+      "entryPriceB": 0.062,
+      "pricingGap": 50.29999999999999,
+      "alertedAt": "2026-04-01T10:33:04.987Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 50.3pts at alert time"
     }
   ]
 }
