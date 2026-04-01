@@ -1759,6 +1759,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 52.3pts at alert time"
+    },
+    {
+      "id": "edge_567687_1775030366159",
+      "marketId": "567687",
+      "question": "Russia x Ukraine ceasefire by end of 2026?",
+      "slug": "russia-x-ukraine-ceasefire-before-2027",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.295,
+      "impliedReturn": 238.98305084745766,
+      "edgeScore": 23.898305084745765,
+      "endDate": "2026-12-31T00:00:00Z",
+      "daysLeft": 273.66705836805556,
+      "volume": 12439733.525015073,
+      "liquidity": 12439733.525015073,
+      "alertedAt": "2026-04-01T07:59:26.159Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
