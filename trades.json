@@ -1798,6 +1798,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 50.3pts at alert time"
+    },
+    {
+      "id": "edge_663583_1775113429366",
+      "marketId": "663583",
+      "question": "Will the Iranian regime fall before 2027?",
+      "slug": "will-the-iranian-regime-fall-by-the-end-of-2026",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.235,
+      "impliedReturn": 325.531914893617,
+      "edgeScore": 32.5531914893617,
+      "endDate": "2026-12-31T00:00:00Z",
+      "daysLeft": 272.70567864583336,
+      "volume": 12907362.039293576,
+      "liquidity": 12907362.039293576,
+      "alertedAt": "2026-04-02T07:03:49.367Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
