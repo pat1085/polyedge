@@ -1842,6 +1842,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_1640919_1507751_1775126677538",
+      "marketId": "1640919+1507751",
+      "question": "[CORR] US forces enter Iran by April 30? vs Will the Iranian regime fall by April 30?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.615,
+      "entryPriceB": 0.0335,
+      "pricingGap": 58.15,
+      "alertedAt": "2026-04-02T10:44:37.538Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 58.1pts at alert time"
     }
   ]
 }
