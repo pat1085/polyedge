@@ -1876,6 +1876,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 58.2pts at alert time"
+    },
+    {
+      "id": "edge_1507751_1775291586032",
+      "marketId": "1507751",
+      "question": "Will the Iranian regime fall by April 30?",
+      "slug": "will-the-iranian-regime-fall-by-april-30",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0355,
+      "impliedReturn": 2716.9014084507044,
+      "edgeScore": 99,
+      "endDate": "2026-04-30T00:00:00Z",
+      "daysLeft": 25.643680208333333,
+      "volume": 19188626.990030184,
+      "liquidity": 19188626.990030184,
+      "alertedAt": "2026-04-04T08:33:06.032Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
