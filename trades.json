@@ -1915,6 +1915,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 72.2pts at alert time"
+    },
+    {
+      "id": "edge_566146_1775336108491",
+      "marketId": "566146",
+      "question": "Will Atletico Madrid win the 2025–26 Champions League?",
+      "slug": "will-atletico-madrid-win-the-202526-champions-league",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.034,
+      "impliedReturn": 2841.176470588235,
+      "edgeScore": 99,
+      "endDate": "2026-05-31T00:00:00Z",
+      "daysLeft": 56.12837396990741,
+      "volume": 12830269.677902907,
+      "liquidity": 12830269.677902907,
+      "alertedAt": "2026-04-04T20:55:08.491Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_1640919_566146_1775336109467",
+      "marketId": "1640919+566146",
+      "question": "[CORR] US forces enter Iran by April 30? vs Will Atletico Madrid win the 2025–26 Champions League?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.825,
+      "entryPriceB": 0.034,
+      "pricingGap": 79.1,
+      "alertedAt": "2026-04-04T20:55:09.467Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 79.1pts at alert time"
     }
   ]
 }
