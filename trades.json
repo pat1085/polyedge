@@ -1898,6 +1898,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_1640919_997488_1775320009196",
+      "marketId": "1640919+997488",
+      "question": "[CORR] US forces enter Iran by April 30? vs Will Trump acquire Greenland before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.805,
+      "entryPriceB": 0.0835,
+      "pricingGap": 72.15,
+      "alertedAt": "2026-04-04T16:26:49.196Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 72.2pts at alert time"
     }
   ]
 }
