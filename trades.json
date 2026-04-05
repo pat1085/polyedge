@@ -2022,6 +2022,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 23.3pts at alert time"
+    },
+    {
+      "id": "edge_1569627_1775399363893",
+      "marketId": "1569627",
+      "question": "US x Iran ceasefire by April 15?",
+      "slug": "us-x-iran-ceasefire-by-april-15-182-528-637",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.075,
+      "impliedReturn": 1233.3333333333335,
+      "edgeScore": 99,
+      "endDate": "2026-04-15T00:00:00Z",
+      "daysLeft": 9.396251261574074,
+      "volume": 13098913.74566182,
+      "liquidity": 13098913.74566182,
+      "alertedAt": "2026-04-05T14:29:23.893Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_559652_566146_1775399365002",
+      "marketId": "559652+566146",
+      "question": "[CORR] Will Gavin Newsom win the 2028 Democratic presidential nomin vs Will Atletico Madrid win the 2025–26 Champions League?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.242,
+      "entryPriceB": 0.0355,
+      "pricingGap": 20.65,
+      "alertedAt": "2026-04-05T14:29:25.002Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.6pts at alert time"
     }
   ]
 }
