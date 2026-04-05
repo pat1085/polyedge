@@ -2078,6 +2078,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 20.6pts at alert time"
+    },
+    {
+      "id": "corr_566146_663583_1775429842473",
+      "marketId": "566146+663583",
+      "question": "[CORR] Will Atletico Madrid win the 2025–26 Champions League? vs Will the Iranian regime fall before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0345,
+      "entryPriceB": 0.275,
+      "pricingGap": 24.05,
+      "alertedAt": "2026-04-05T22:57:22.473Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 24.1pts at alert time"
     }
   ]
 }
