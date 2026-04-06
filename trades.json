@@ -2095,6 +2095,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 24.1pts at alert time"
+    },
+    {
+      "id": "edge_1706788_1775462964758",
+      "marketId": "1706788",
+      "question": "US x Iran ceasefire by April 7?",
+      "slug": "us-x-iran-ceasefire-by-april-7-278",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.078,
+      "impliedReturn": 1182.0512820512822,
+      "edgeScore": 99,
+      "endDate": "2026-04-07T00:00:00Z",
+      "daysLeft": 0.6601301273148148,
+      "volume": 13339904.162045935,
+      "liquidity": 13339904.162045935,
+      "alertedAt": "2026-04-06T08:09:24.759Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
