@@ -2117,6 +2117,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_1706788_663583_1775468750189",
+      "marketId": "1706788+663583",
+      "question": "[CORR] US x Iran ceasefire by April 7? vs Will the Iranian regime fall before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0405,
+      "entryPriceB": 0.265,
+      "pricingGap": 22.45,
+      "alertedAt": "2026-04-06T09:45:50.189Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 22.4pts at alert time"
     }
   ]
 }
