@@ -2207,6 +2207,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 21.6pts at alert time"
+    },
+    {
+      "id": "corr_997488_1466016_1775514520884",
+      "marketId": "997488+1466016",
+      "question": "[CORR] Will Trump acquire Greenland before 2027? vs US x Iran ceasefire by April 30?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0815,
+      "entryPriceB": 0.295,
+      "pricingGap": 21.349999999999998,
+      "alertedAt": "2026-04-06T22:28:40.884Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 21.3pts at alert time"
     }
   ]
 }
