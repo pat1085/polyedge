@@ -2390,6 +2390,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_703258_559652_1775604676398",
+      "marketId": "703258+559652",
+      "question": "[CORR] Will Jesus Christ return before 2027? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0385,
+      "entryPriceB": 0.2625,
+      "pricingGap": 22.400000000000002,
+      "alertedAt": "2026-04-07T23:31:16.399Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 22.4pts at alert time"
     }
   ]
 }
