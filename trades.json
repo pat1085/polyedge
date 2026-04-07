@@ -2241,6 +2241,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 26.8pts at alert time"
+    },
+    {
+      "id": "corr_1466016_566146_1775563656202",
+      "marketId": "1466016+566146",
+      "question": "[CORR] US x Iran ceasefire by April 30? vs Will Atletico Madrid win the 2025–26 Champions League?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.255,
+      "entryPriceB": 0.0355,
+      "pricingGap": 21.95,
+      "alertedAt": "2026-04-07T12:07:36.202Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 21.9pts at alert time"
     }
   ]
 }
