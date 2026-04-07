@@ -2224,6 +2224,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 21.3pts at alert time"
+    },
+    {
+      "id": "corr_1706788_1466016_1775552069601",
+      "marketId": "1706788+1466016",
+      "question": "[CORR] US x Iran ceasefire by April 7? vs US x Iran ceasefire by April 30?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0375,
+      "entryPriceB": 0.305,
+      "pricingGap": 26.75,
+      "alertedAt": "2026-04-07T08:54:29.601Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 26.8pts at alert time"
     }
   ]
 }
