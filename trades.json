@@ -2451,6 +2451,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_663583_1775726065628",
+      "marketId": "663583",
+      "question": "Will the Iranian regime fall before 2027?",
+      "slug": "will-the-iranian-regime-fall-by-the-end-of-2026",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.225,
+      "impliedReturn": 344.44444444444446,
+      "edgeScore": 34.44444444444444,
+      "endDate": "2026-12-31T00:00:00Z",
+      "daysLeft": 265.61498118055556,
+      "volume": 13859434.847355668,
+      "liquidity": 13859434.847355668,
+      "alertedAt": "2026-04-09T09:14:25.628Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
