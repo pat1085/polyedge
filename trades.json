@@ -2490,6 +2490,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 20.0pts at alert time"
+    },
+    {
+      "id": "edge_566146_1775944503955",
+      "marketId": "566146",
+      "question": "Will Atletico Madrid win the 2025–26 Champions League?",
+      "slug": "will-atletico-madrid-win-the-202526-champions-league",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0785,
+      "impliedReturn": 1173.8853503184714,
+      "edgeScore": 99,
+      "endDate": "2026-05-31T00:00:00Z",
+      "daysLeft": 49.086759791666665,
+      "volume": 16324096.258723984,
+      "liquidity": 16324096.258723984,
+      "alertedAt": "2026-04-11T21:55:03.955Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
