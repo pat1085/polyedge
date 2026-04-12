@@ -2663,6 +2663,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_1507751_559652_1776023806922",
+      "marketId": "1507751+559652",
+      "question": "[CORR] Will the Iranian regime fall by April 30? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0305,
+      "entryPriceB": 0.273,
+      "pricingGap": 24.250000000000004,
+      "alertedAt": "2026-04-12T19:56:46.922Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 24.3pts at alert time"
     }
   ]
 }
