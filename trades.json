@@ -2641,6 +2641,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 20.8pts at alert time"
+    },
+    {
+      "id": "edge_567560_1776006140879",
+      "marketId": "567560",
+      "question": "Will the next Prime Minister of Hungary be Viktor Orbán?",
+      "slug": "will-the-next-prime-minister-of-hungary-be-viktor-orbn",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.155,
+      "impliedReturn": 545.1612903225807,
+      "edgeScore": 70.8709677419355,
+      "endDate": "2026-04-12T00:00:00Z",
+      "daysLeft": -0.6266305324074074,
+      "volume": 14196585.710096683,
+      "liquidity": 14196585.710096683,
+      "alertedAt": "2026-04-12T15:02:20.879Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
