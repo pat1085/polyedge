@@ -2624,6 +2624,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 25.9pts at alert time"
+    },
+    {
+      "id": "corr_567621_567687_1775995045043",
+      "marketId": "567621+567687",
+      "question": "[CORR] Will China invade Taiwan by end of 2026? vs Russia x Ukraine ceasefire by end of 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.087,
+      "entryPriceB": 0.295,
+      "pricingGap": 20.8,
+      "alertedAt": "2026-04-12T11:57:25.043Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.8pts at alert time"
     }
   ]
 }
