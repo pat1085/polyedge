@@ -2792,6 +2792,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_958443_1706766_1776188444007",
+      "marketId": "958443+1706766",
+      "question": "[CORR] Will the Iranian regime fall by June 30? vs Iran x Israel/US conflict ends by April 7?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.085,
+      "entryPriceB": 0.763,
+      "pricingGap": 67.80000000000001,
+      "alertedAt": "2026-04-14T17:40:44.007Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 67.8pts at alert time"
     }
   ]
 }
