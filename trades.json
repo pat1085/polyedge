@@ -2941,6 +2941,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_553866_1776283971309",
+      "marketId": "553866",
+      "question": "Will the San Antonio Spurs win the 2026 NBA Finals?",
+      "slug": "will-the-san-antonio-spurs-win-the-2026-nba-finals",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.1555,
+      "impliedReturn": 543.0868167202572,
+      "edgeScore": 54.30868167202571,
+      "endDate": "2026-07-01T00:00:00Z",
+      "daysLeft": 76.15773950231481,
+      "volume": 16862340.69977487,
+      "liquidity": 16862340.69977487,
+      "alertedAt": "2026-04-15T20:12:51.309Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
