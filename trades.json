@@ -2919,6 +2919,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_567621_1776252776605",
+      "marketId": "567621",
+      "question": "Will China invade Taiwan by end of 2026?",
+      "slug": "will-china-invade-taiwan-before-2027",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.087,
+      "impliedReturn": 1049.4252873563219,
+      "edgeScore": 99,
+      "endDate": "2026-12-31T00:00:00Z",
+      "daysLeft": 259.51878931712963,
+      "volume": 19597654.250947993,
+      "liquidity": 19597654.250947993,
+      "alertedAt": "2026-04-15T11:32:56.605Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
