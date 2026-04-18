@@ -2985,6 +2985,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_1540766_1776503378111",
+      "marketId": "1540766",
+      "question": "Strait of Hormuz traffic returns to normal by end of April?",
+      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-april-30",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.375,
+      "impliedReturn": 166.66666666666666,
+      "edgeScore": 21.666666666666664,
+      "endDate": "2026-04-30T00:00:00Z",
+      "daysLeft": 11.618308923611112,
+      "volume": 15255451.561438473,
+      "liquidity": 15255451.561438473,
+      "alertedAt": "2026-04-18T09:09:38.111Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
