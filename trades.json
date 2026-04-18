@@ -3007,6 +3007,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_558936_1776533444957",
+      "marketId": "558936",
+      "question": "Will France win the 2026 FIFA World Cup?",
+      "slug": "will-france-win-the-2026-fifa-world-cup-924",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.152,
+      "impliedReturn": 557.8947368421053,
+      "edgeScore": 55.789473684210535,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 92.27031302083333,
+      "volume": 15172688.129903793,
+      "liquidity": 15172688.129903793,
+      "alertedAt": "2026-04-18T17:30:44.957Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
