@@ -3146,6 +3146,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_561230_1776724570613",
+      "marketId": "561230",
+      "question": "Will Gavin Newsom win the 2028 US Presidential Election?",
+      "slug": "will-gavin-newsom-win-the-2028-us-presidential-election",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.1795,
+      "impliedReturn": 457.10306406685237,
+      "edgeScore": 45.710306406685234,
+      "endDate": "2028-11-07T00:00:00Z",
+      "daysLeft": 931.0582105208333,
+      "volume": 15653015.174229074,
+      "liquidity": 15653015.174229074,
+      "alertedAt": "2026-04-20T22:36:10.613Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
