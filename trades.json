@@ -3168,6 +3168,57 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_703258_559652_1776788004157",
+      "marketId": "703258+559652",
+      "question": "[CORR] Will Jesus Christ return before 2027? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0385,
+      "entryPriceB": 0.2725,
+      "pricingGap": 23.400000000000002,
+      "alertedAt": "2026-04-21T16:13:24.157Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 23.4pts at alert time"
+    },
+    {
+      "id": "corr_559652_1919417_1776788005310",
+      "marketId": "559652+1919417",
+      "question": "[CORR] Will Gavin Newsom win the 2028 Democratic presidential nomin vs US x Iran permanent peace deal by April 22, 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.2725,
+      "entryPriceB": 0.045,
+      "pricingGap": 22.750000000000004,
+      "alertedAt": "2026-04-21T16:13:25.310Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 22.8pts at alert time"
+    },
+    {
+      "id": "corr_997488_559652_1776788006145",
+      "marketId": "997488+559652",
+      "question": "[CORR] Will Trump acquire Greenland before 2027? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.071,
+      "entryPriceB": 0.2725,
+      "pricingGap": 20.150000000000002,
+      "alertedAt": "2026-04-21T16:13:26.145Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.2pts at alert time"
     }
   ]
 }
