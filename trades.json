@@ -3480,6 +3480,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 23.0pts at alert time"
+    },
+    {
+      "id": "edge_558934_1776995897362",
+      "marketId": "558934",
+      "question": "Will Spain win the 2026 FIFA World Cup?",
+      "slug": "will-spain-win-the-2026-fifa-world-cup-963",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.1575,
+      "impliedReturn": 534.9206349206349,
+      "edgeScore": 53.492063492063494,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 86.91785462962963,
+      "volume": 15901916.055027233,
+      "liquidity": 15901916.055027233,
+      "alertedAt": "2026-04-24T01:58:17.362Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
