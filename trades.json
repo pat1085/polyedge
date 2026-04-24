@@ -3502,6 +3502,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_1540766_559652_1777053923070",
+      "marketId": "1540766+559652",
+      "question": "[CORR] Strait of Hormuz traffic returns to normal by end of April? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.031,
+      "entryPriceB": 0.2625,
+      "pricingGap": 23.150000000000002,
+      "alertedAt": "2026-04-24T18:05:23.070Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 23.2pts at alert time"
     }
   ]
 }
