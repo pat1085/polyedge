@@ -3519,6 +3519,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 23.2pts at alert time"
+    },
+    {
+      "id": "edge_1919421_1777140109797",
+      "marketId": "1919421",
+      "question": "US x Iran permanent peace deal by April 30, 2026?",
+      "slug": "us-x-iran-permanent-peace-deal-by-april-30-2026-925",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0325,
+      "impliedReturn": 2976.9230769230767,
+      "edgeScore": 99,
+      "endDate": "2026-04-30T00:00:00Z",
+      "daysLeft": 4.248729212962963,
+      "volume": 16391435.215761978,
+      "liquidity": 16391435.215761978,
+      "alertedAt": "2026-04-25T18:01:49.798Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_665374_1919421_1777140110947",
+      "marketId": "665374+1919421",
+      "question": "[CORR] Will the U.S. invade Iran before 2027? vs US x Iran permanent peace deal by April 30, 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.335,
+      "entryPriceB": 0.0325,
+      "pricingGap": 30.25,
+      "alertedAt": "2026-04-25T18:01:50.947Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 30.3pts at alert time"
     }
   ]
 }
