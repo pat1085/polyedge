@@ -3602,6 +3602,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_553863_1777184537472",
+      "marketId": "553863",
+      "question": "Will the Los Angeles Lakers win the 2026 NBA Finals?",
+      "slug": "will-the-los-angeles-lakers-win-the-2026-nba-finals",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.039,
+      "impliedReturn": 2464.1025641025644,
+      "edgeScore": 99,
+      "endDate": "2026-07-01T00:00:00Z",
+      "daysLeft": 65.73452002314815,
+      "volume": 16481462.06525404,
+      "liquidity": 16481462.06525404,
+      "alertedAt": "2026-04-26T06:22:17.472Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_665374_553863_1777184538507",
+      "marketId": "665374+553863",
+      "question": "[CORR] Will the U.S. invade Iran before 2027? vs Will the Los Angeles Lakers win the 2026 NBA Finals?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.335,
+      "entryPriceB": 0.039,
+      "pricingGap": 29.600000000000005,
+      "alertedAt": "2026-04-26T06:22:18.507Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 29.6pts at alert time"
     }
   ]
 }
