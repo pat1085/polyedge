@@ -5579,6 +5579,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 43.1pts at alert time"
+    },
+    {
+      "id": "corr_553863_665374_1777396138497",
+      "marketId": "553863+665374",
+      "question": "[CORR] Will the Los Angeles Lakers win the 2026 NBA Finals? vs Will the U.S. invade Iran before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0375,
+      "entryPriceB": 0.335,
+      "pricingGap": 29.750000000000004,
+      "alertedAt": "2026-04-28T17:08:58.497Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 29.8pts at alert time"
     }
   ]
 }
