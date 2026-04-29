@@ -5801,6 +5801,40 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_566146_665374_1777493222917",
+      "marketId": "566146+665374",
+      "question": "[CORR] Will Atletico Madrid win the 2025–26 Champions League? vs Will the U.S. invade Iran before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0585,
+      "entryPriceB": 0.305,
+      "pricingGap": 24.65,
+      "alertedAt": "2026-04-29T20:07:02.917Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 24.6pts at alert time"
+    },
+    {
+      "id": "corr_703258_559652_1777493224037",
+      "marketId": "703258+559652",
+      "question": "[CORR] Will Jesus Christ return before 2027? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0355,
+      "entryPriceB": 0.2695,
+      "pricingGap": 23.400000000000002,
+      "alertedAt": "2026-04-29T20:07:04.037Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 23.4pts at alert time"
     }
   ]
 }
