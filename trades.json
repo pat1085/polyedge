@@ -1335,10 +1335,10 @@
       "volume": 11879618.237058148,
       "liquidity": 11879618.237058148,
       "alertedAt": "2026-03-28T07:40:14.206Z",
-      "status": "PENDING",
-      "outcome": null,
-      "resolvedAt": null,
-      "paperPnl": null,
+      "status": "LOSS",
+      "outcome": "NO",
+      "resolvedAt": "2026-05-01T09:53:53.630Z",
+      "paperPnl": -1,
       "notes": ""
     },
     {
@@ -1893,10 +1893,10 @@
       "volume": 19188626.990030184,
       "liquidity": 19188626.990030184,
       "alertedAt": "2026-04-04T08:33:06.032Z",
-      "status": "PENDING",
-      "outcome": null,
-      "resolvedAt": null,
-      "paperPnl": null,
+      "status": "LOSS",
+      "outcome": "NO",
+      "resolvedAt": "2026-05-01T09:53:57.393Z",
+      "paperPnl": -1,
       "notes": ""
     },
     {
@@ -2529,10 +2529,10 @@
       "volume": 28361074.705736045,
       "liquidity": 28361074.705736045,
       "alertedAt": "2026-04-11T22:59:33.526Z",
-      "status": "PENDING",
-      "outcome": null,
-      "resolvedAt": null,
-      "paperPnl": null,
+      "status": "LOSS",
+      "outcome": "NO",
+      "resolvedAt": "2026-05-01T09:54:01.997Z",
+      "paperPnl": -1,
       "notes": ""
     },
     {
@@ -3856,10 +3856,10 @@
       "volume": 46542801.31404938,
       "liquidity": 46542801.31404938,
       "alertedAt": "2026-04-28T12:10:36.914Z",
-      "status": "PENDING",
-      "outcome": null,
-      "resolvedAt": null,
-      "paperPnl": null,
+      "status": "WIN",
+      "outcome": "NO",
+      "resolvedAt": "2026-05-01T09:54:14.686Z",
+      "paperPnl": 1.004,
       "notes": ""
     },
     {
