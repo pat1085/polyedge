@@ -5979,6 +5979,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_553863_1777826376415",
+      "marketId": "553863",
+      "question": "Will the Los Angeles Lakers win the 2026 NBA Finals?",
+      "slug": "will-the-los-angeles-lakers-win-the-2026-nba-finals",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.033,
+      "impliedReturn": 2930.30303030303,
+      "edgeScore": 99,
+      "endDate": "2026-07-01T00:00:00Z",
+      "daysLeft": 58.305828553240744,
+      "volume": 20224245.77430697,
+      "liquidity": 20224245.77430697,
+      "alertedAt": "2026-05-03T16:39:36.415Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_559652_553863_1777826377462",
+      "marketId": "559652+553863",
+      "question": "[CORR] Will Gavin Newsom win the 2028 Democratic presidential nomin vs Will the Los Angeles Lakers win the 2026 NBA Finals?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.2635,
+      "entryPriceB": 0.033,
+      "pricingGap": 23.05,
+      "alertedAt": "2026-05-03T16:39:37.462Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 23.1pts at alert time"
     }
   ]
 }
