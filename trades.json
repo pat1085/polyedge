@@ -6018,6 +6018,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 23.1pts at alert time"
+    },
+    {
+      "id": "edge_558941_1777946801503",
+      "marketId": "558941",
+      "question": "Will Netherlands win the 2026 FIFA World Cup?",
+      "slug": "will-netherlands-win-the-2026-fifa-world-cup-739",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0335,
+      "impliedReturn": 2885.0746268656712,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 75.91201966435185,
+      "volume": 16611450.467463885,
+      "liquidity": 16611450.467463885,
+      "alertedAt": "2026-05-05T02:06:41.503Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_665374_558941_1777946802552",
+      "marketId": "665374+558941",
+      "question": "[CORR] Will the U.S. invade Iran before 2027? vs Will Netherlands win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.305,
+      "entryPriceB": 0.0335,
+      "pricingGap": 27.149999999999995,
+      "alertedAt": "2026-05-05T02:06:42.552Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 27.1pts at alert time"
     }
   ]
 }
