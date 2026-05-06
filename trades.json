@@ -6096,6 +6096,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 22.8pts at alert time"
+    },
+    {
+      "id": "corr_958443_559652_1778033200565",
+      "marketId": "958443+559652",
+      "question": "[CORR] Will the Iranian regime fall by June 30? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.055,
+      "entryPriceB": 0.2565,
+      "pricingGap": 20.150000000000002,
+      "alertedAt": "2026-05-06T02:06:40.565Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.2pts at alert time"
     }
   ]
 }
