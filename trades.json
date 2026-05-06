@@ -6201,6 +6201,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_665374_1778086701586",
+      "marketId": "665374",
+      "question": "Will the U.S. invade Iran before 2027?",
+      "slug": "will-the-us-invade-iran-before-2027",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.215,
+      "impliedReturn": 365.1162790697675,
+      "edgeScore": 36.51162790697675,
+      "endDate": "2026-12-31T00:00:00Z",
+      "daysLeft": 238.29280575231482,
+      "volume": 24844119.40328098,
+      "liquidity": 24844119.40328098,
+      "alertedAt": "2026-05-06T16:58:21.586Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
