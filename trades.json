@@ -6474,6 +6474,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 30.0pts at alert time"
+    },
+    {
+      "id": "corr_1919425_558940_1778312752900",
+      "marketId": "1919425+558940",
+      "question": "[CORR] US x Iran permanent peace deal by May 31, 2026? vs Will Portugal win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.295,
+      "entryPriceB": 0.0745,
+      "pricingGap": 22.049999999999997,
+      "alertedAt": "2026-05-09T07:45:52.900Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 22.0pts at alert time"
     }
   ]
 }
