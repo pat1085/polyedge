@@ -6513,6 +6513,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_997488_665374_1778445587382",
+      "marketId": "997488+665374",
+      "question": "[CORR] Will Trump acquire Greenland before 2027? vs Will the U.S. invade Iran before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0675,
+      "entryPriceB": 0.275,
+      "pricingGap": 20.75,
+      "alertedAt": "2026-05-10T20:39:47.382Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.8pts at alert time"
     }
   ]
 }
