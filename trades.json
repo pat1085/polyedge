@@ -6586,6 +6586,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 21.0pts at alert time"
+    },
+    {
+      "id": "corr_665374_553871_1778583514848",
+      "marketId": "665374+553871",
+      "question": "[CORR] Will the U.S. invade Iran before 2027? vs Will the Detroit Pistons win the 2026 NBA Finals?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.285,
+      "entryPriceB": 0.0355,
+      "pricingGap": 24.949999999999996,
+      "alertedAt": "2026-05-12T10:58:34.848Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 24.9pts at alert time"
     }
   ]
 }
