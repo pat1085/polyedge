@@ -6901,6 +6901,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_553871_1778897545655",
+      "marketId": "553871",
+      "question": "Will the Detroit Pistons win the 2026 NBA Finals?",
+      "slug": "will-the-detroit-pistons-win-the-2026-nba-finals",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0365,
+      "impliedReturn": 2639.7260273972606,
+      "edgeScore": 99,
+      "endDate": "2026-07-01T00:00:00Z",
+      "daysLeft": 45.90803644675926,
+      "volume": 18263285.61451788,
+      "liquidity": 18263285.61451788,
+      "alertedAt": "2026-05-16T02:12:25.655Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
