@@ -6945,6 +6945,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_558938_1779006437738",
+      "marketId": "558938",
+      "question": "Will Argentina win the 2026 FIFA World Cup?",
+      "slug": "will-argentina-win-the-2026-fifa-world-cup-245",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0855,
+      "impliedReturn": 1069.5906432748536,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 63.64771140046296,
+      "volume": 18130976.702477153,
+      "liquidity": 18130976.702477153,
+      "alertedAt": "2026-05-17T08:27:17.738Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
