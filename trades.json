@@ -7228,6 +7228,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_553866_1779371906115",
+      "marketId": "553866",
+      "question": "Will the San Antonio Spurs win the 2026 NBA Finals?",
+      "slug": "will-the-san-antonio-spurs-win-the-2026-nba-finals",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.3155,
+      "impliedReturn": 216.95721077654517,
+      "edgeScore": 24.950079239302692,
+      "endDate": "2026-07-01T00:00:00Z",
+      "daysLeft": 40.41775333333333,
+      "volume": 29030700.177639548,
+      "liquidity": 29030700.177639548,
+      "alertedAt": "2026-05-21T13:58:26.115Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_665374_558941_1779371907358",
+      "marketId": "665374+558941",
+      "question": "[CORR] Will the U.S. invade Iran before 2027? vs Will Netherlands win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.285,
+      "entryPriceB": 0.0345,
+      "pricingGap": 25.049999999999994,
+      "alertedAt": "2026-05-21T13:58:27.358Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 25.0pts at alert time"
     }
   ]
 }
