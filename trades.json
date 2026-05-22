@@ -7267,6 +7267,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 25.0pts at alert time"
+    },
+    {
+      "id": "edge_1919425_1779445171836",
+      "marketId": "1919425",
+      "question": "US x Iran permanent peace deal by May 31, 2026?",
+      "slug": "us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.185,
+      "impliedReturn": 440.5405405405405,
+      "edgeScore": 57.270270270270274,
+      "endDate": "2026-05-31T00:00:00Z",
+      "daysLeft": 8.569770451388889,
+      "volume": 35115142.36022697,
+      "liquidity": 35115142.36022697,
+      "alertedAt": "2026-05-22T10:19:31.836Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
