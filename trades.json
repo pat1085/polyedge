@@ -7389,6 +7389,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_958443_665374_1779493012592",
+      "marketId": "958443+665374",
+      "question": "[CORR] Will the Iranian regime fall by June 30? vs Will the U.S. invade Iran before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0455,
+      "entryPriceB": 0.315,
+      "pricingGap": 26.950000000000003,
+      "alertedAt": "2026-05-22T23:36:52.592Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 27.0pts at alert time"
     }
   ]
 }
