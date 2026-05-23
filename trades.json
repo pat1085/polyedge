@@ -7457,6 +7457,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 22.0pts at alert time"
+    },
+    {
+      "id": "corr_958443_1919425_1779547554061",
+      "marketId": "958443+1919425",
+      "question": "[CORR] Will the Iranian regime fall by June 30? vs US x Iran permanent peace deal by May 31, 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0385,
+      "entryPriceB": 0.255,
+      "pricingGap": 21.65,
+      "alertedAt": "2026-05-23T14:45:54.061Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 21.6pts at alert time"
     }
   ]
 }
