@@ -7406,6 +7406,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 27.0pts at alert time"
+    },
+    {
+      "id": "corr_665374_1809560_1779503122125",
+      "marketId": "665374+1809560",
+      "question": "[CORR] Will the U.S. invade Iran before 2027? vs Strait of Hormuz traffic returns to normal by end of May?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.305,
+      "entryPriceB": 0.0325,
+      "pricingGap": 27.249999999999996,
+      "alertedAt": "2026-05-23T02:25:22.125Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 27.2pts at alert time"
     }
   ]
 }
