@@ -7423,6 +7423,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 27.2pts at alert time"
+    },
+    {
+      "id": "corr_559652_1809560_1779515430265",
+      "marketId": "559652+1809560",
+      "question": "[CORR] Will Gavin Newsom win the 2028 Democratic presidential nomin vs Strait of Hormuz traffic returns to normal by end of May?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.2425,
+      "entryPriceB": 0.0305,
+      "pricingGap": 21.2,
+      "alertedAt": "2026-05-23T05:50:30.265Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 21.2pts at alert time"
     }
   ]
 }
