@@ -7564,6 +7564,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 58.3pts at alert time"
+    },
+    {
+      "id": "edge_558938_1779623211335",
+      "marketId": "558938",
+      "question": "Will Argentina win the 2026 FIFA World Cup?",
+      "slug": "will-argentina-win-the-2026-fifa-world-cup-245",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0825,
+      "impliedReturn": 1112.121212121212,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 56.50912810185185,
+      "volume": 20580301.60846602,
+      "liquidity": 20580301.60846602,
+      "alertedAt": "2026-05-24T11:46:51.335Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
