@@ -7586,6 +7586,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_1919425_1809560_1779634025553",
+      "marketId": "1919425+1809560",
+      "question": "[CORR] US x Iran permanent peace deal by May 31, 2026? vs Strait of Hormuz traffic returns to normal by end of May?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.36,
+      "entryPriceB": 0.048,
+      "pricingGap": 31.2,
+      "alertedAt": "2026-05-24T14:47:05.553Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 31.2pts at alert time"
     }
   ]
 }
