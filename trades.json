@@ -7603,6 +7603,40 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 31.2pts at alert time"
+    },
+    {
+      "id": "corr_958443_559652_1779654576173",
+      "marketId": "958443+559652",
+      "question": "[CORR] Will the Iranian regime fall by June 30? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0305,
+      "entryPriceB": 0.2405,
+      "pricingGap": 21,
+      "alertedAt": "2026-05-24T20:29:36.173Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 21.0pts at alert time"
+    },
+    {
+      "id": "corr_559652_558941_1779654577163",
+      "marketId": "559652+558941",
+      "question": "[CORR] Will Gavin Newsom win the 2028 Democratic presidential nomin vs Will Netherlands win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.2405,
+      "entryPriceB": 0.0345,
+      "pricingGap": 20.599999999999998,
+      "alertedAt": "2026-05-24T20:29:37.163Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.6pts at alert time"
     }
   ]
 }
