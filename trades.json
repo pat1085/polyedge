@@ -7525,6 +7525,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 64.2pts at alert time"
+    },
+    {
+      "id": "edge_558936_1779586112489",
+      "marketId": "558936",
+      "question": "Will France win the 2026 FIFA World Cup?",
+      "slug": "will-france-win-the-2026-fifa-world-cup-924",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.1775,
+      "impliedReturn": 463.3802816901409,
+      "edgeScore": 53.28873239436621,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 56.93851289351852,
+      "volume": 29765670.554378398,
+      "liquidity": 29765670.554378398,
+      "alertedAt": "2026-05-24T01:28:32.489Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_1919425_558938_1779586113578",
+      "marketId": "1919425+558938",
+      "question": "[CORR] US x Iran permanent peace deal by May 31, 2026? vs Will Argentina win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.665,
+      "entryPriceB": 0.0825,
+      "pricingGap": 58.25,
+      "alertedAt": "2026-05-24T01:28:33.578Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 58.3pts at alert time"
     }
   ]
 }
