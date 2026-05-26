@@ -7754,6 +7754,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_997488_553866_1779836564450",
+      "marketId": "997488+553866",
+      "question": "[CORR] Will Trump acquire Greenland before 2027? vs Will the San Antonio Spurs win the 2026 NBA Finals?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.068,
+      "entryPriceB": 0.2735,
+      "pricingGap": 20.55,
+      "alertedAt": "2026-05-26T23:02:44.450Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.6pts at alert time"
     }
   ]
 }
