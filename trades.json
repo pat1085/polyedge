@@ -7671,6 +7671,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 21.1pts at alert time"
+    },
+    {
+      "id": "edge_558939_1779804709278",
+      "marketId": "558939",
+      "question": "Will Germany win the 2026 FIFA World Cup?",
+      "slug": "will-germany-win-the-2026-fifa-world-cup-467",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0515,
+      "impliedReturn": 1841.747572815534,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 54.40845746527778,
+      "volume": 20114740.671887796,
+      "liquidity": 20114740.671887796,
+      "alertedAt": "2026-05-26T14:11:49.278Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_1919425_558939_1779804710334",
+      "marketId": "1919425+558939",
+      "question": "[CORR] US x Iran permanent peace deal by May 31, 2026? vs Will Germany win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.255,
+      "entryPriceB": 0.0515,
+      "pricingGap": 20.35,
+      "alertedAt": "2026-05-26T14:11:50.334Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.4pts at alert time"
     }
   ]
 }
