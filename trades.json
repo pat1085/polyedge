@@ -7710,6 +7710,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 20.4pts at alert time"
+    },
+    {
+      "id": "edge_558941_1779817255413",
+      "marketId": "558941",
+      "question": "Will Netherlands win the 2026 FIFA World Cup?",
+      "slug": "will-netherlands-win-the-2026-fifa-world-cup-739",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0345,
+      "impliedReturn": 2798.550724637681,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 54.263247569444445,
+      "volume": 22299278.593697555,
+      "liquidity": 22299278.593697555,
+      "alertedAt": "2026-05-26T17:40:55.413Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
