@@ -7903,6 +7903,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_958443_1779978684105",
+      "marketId": "958443",
+      "question": "Will the Iranian regime fall by June 30?",
+      "slug": "will-the-iranian-regime-fall-by-june-30",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0305,
+      "impliedReturn": 3178.6885245901635,
+      "edgeScore": 99,
+      "endDate": "2026-06-30T00:00:00Z",
+      "daysLeft": 32.394859930555555,
+      "volume": 44897563.78856002,
+      "liquidity": 44897563.78856002,
+      "alertedAt": "2026-05-28T14:31:24.105Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
