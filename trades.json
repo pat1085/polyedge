@@ -7837,6 +7837,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_558935_1779935380166",
+      "marketId": "558935",
+      "question": "Will England win the 2026 FIFA World Cup?",
+      "slug": "will-england-win-the-2026-fifa-world-cup-937",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.1115,
+      "impliedReturn": 796.8609865470851,
+      "edgeScore": 91.63901345291478,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 52.89606292824074,
+      "volume": 20546106.346458018,
+      "liquidity": 20546106.346458018,
+      "alertedAt": "2026-05-28T02:29:40.166Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
