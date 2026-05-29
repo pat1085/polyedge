@@ -8047,6 +8047,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_1919425_553866_1780091222849",
+      "marketId": "1919425+553866",
+      "question": "[CORR] US x Iran permanent peace deal by May 31, 2026? vs Will the San Antonio Spurs win the 2026 NBA Finals?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.055,
+      "entryPriceB": 0.2655,
+      "pricingGap": 21.05,
+      "alertedAt": "2026-05-29T21:47:02.849Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 21.1pts at alert time"
     }
   ]
 }
