@@ -7947,6 +7947,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_553866_558939_1780022050362",
+      "marketId": "553866+558939",
+      "question": "[CORR] Will the San Antonio Spurs win the 2026 NBA Finals? vs Will Germany win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.2545,
+      "entryPriceB": 0.0515,
+      "pricingGap": 20.3,
+      "alertedAt": "2026-05-29T02:34:10.362Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.3pts at alert time"
     }
   ]
 }
