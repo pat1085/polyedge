@@ -7964,6 +7964,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 20.3pts at alert time"
+    },
+    {
+      "id": "edge_1919425_1780062802490",
+      "marketId": "1919425",
+      "question": "US x Iran permanent peace deal by May 31, 2026?",
+      "slug": "us-x-iran-permanent-peace-deal-by-may-31-2026-333-871-241-192-799-449-125",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.085,
+      "impliedReturn": 1076.470588235294,
+      "edgeScore": 99,
+      "endDate": "2026-05-31T00:00:00Z",
+      "daysLeft": 1.421267511574074,
+      "volume": 70310167.47508906,
+      "liquidity": 70310167.47508906,
+      "alertedAt": "2026-05-29T13:53:22.490Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_553866_567621_1780062803652",
+      "marketId": "553866+567621",
+      "question": "[CORR] Will the San Antonio Spurs win the 2026 NBA Finals? vs Will China invade Taiwan by end of 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.2705,
+      "entryPriceB": 0.0655,
+      "pricingGap": 20.5,
+      "alertedAt": "2026-05-29T13:53:23.652Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.5pts at alert time"
     }
   ]
 }
