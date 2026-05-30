@@ -8064,6 +8064,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 21.1pts at alert time"
+    },
+    {
+      "id": "corr_1919425_559652_1780141824069",
+      "marketId": "1919425+559652",
+      "question": "[CORR] US x Iran permanent peace deal by May 31, 2026? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0335,
+      "entryPriceB": 0.2365,
+      "pricingGap": 20.299999999999997,
+      "alertedAt": "2026-05-30T11:50:24.069Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.3pts at alert time"
     }
   ]
 }
