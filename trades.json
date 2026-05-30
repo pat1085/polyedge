@@ -8261,6 +8261,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 64.8pts at alert time"
+    },
+    {
+      "id": "corr_566140_558939_1780166191183",
+      "marketId": "566140+558939",
+      "question": "[CORR] Will Arsenal win the 2025–26 Champions League? vs Will Germany win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.48,
+      "entryPriceB": 0.0515,
+      "pricingGap": 42.85,
+      "alertedAt": "2026-05-30T18:36:31.183Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 42.9pts at alert time"
     }
   ]
 }
