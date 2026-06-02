@@ -8356,6 +8356,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 57.4pts at alert time"
+    },
+    {
+      "id": "corr_553866_558941_1780408430743",
+      "marketId": "553866+558941",
+      "question": "[CORR] Will the San Antonio Spurs win the 2026 NBA Finals? vs Will Netherlands win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.6435,
+      "entryPriceB": 0.0395,
+      "pricingGap": 60.4,
+      "alertedAt": "2026-06-02T13:53:50.743Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 60.4pts at alert time"
     }
   ]
 }
