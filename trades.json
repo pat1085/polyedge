@@ -8866,6 +8866,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_553858_947289_1781000973549",
+      "marketId": "553858+947289",
+      "question": "[CORR] Will the New York Knicks win the 2026 NBA Finals? vs Will Roberto Sánchez Palomino win the 2026 Peruvian presiden",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.6245,
+      "entryPriceB": 0.0505,
+      "pricingGap": 57.400000000000006,
+      "alertedAt": "2026-06-09T10:29:33.549Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 57.4pts at alert time"
     }
   ]
 }
