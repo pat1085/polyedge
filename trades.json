@@ -8844,6 +8844,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_947289_1780986725321",
+      "marketId": "947289",
+      "question": "Will Roberto Sánchez Palomino win the 2026 Peruvian presidential election?",
+      "slug": "will-roberto-snchez-palomino-win-the-2026-peruvian-presidential-election",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.081,
+      "impliedReturn": 1134.567901234568,
+      "edgeScore": 99,
+      "endDate": "2026-06-07T00:00:00Z",
+      "daysLeft": -2.272283773148148,
+      "volume": 23414560.647640288,
+      "liquidity": 23414560.647640288,
+      "alertedAt": "2026-06-09T06:32:05.321Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
