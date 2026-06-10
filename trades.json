@@ -8944,6 +8944,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_558937_1781074942076",
+      "marketId": "558937",
+      "question": "Will Brazil win the 2026 FIFA World Cup?",
+      "slug": "will-brazil-win-the-2026-fifa-world-cup-183",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0845,
+      "impliedReturn": 1083.4319526627219,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 39.706688969907404,
+      "volume": 31615977.580799114,
+      "liquidity": 31615977.580799114,
+      "alertedAt": "2026-06-10T07:02:22.076Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
