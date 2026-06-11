@@ -9122,6 +9122,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 76.0pts at alert time"
+    },
+    {
+      "id": "edge_558935_1781192419130",
+      "marketId": "558935",
+      "question": "Will England win the 2026 FIFA World Cup?",
+      "slug": "will-england-win-the-2026-fifa-world-cup-937",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.1085,
+      "impliedReturn": 821.6589861751153,
+      "edgeScore": 94.49078341013825,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 38.347000844907406,
+      "volume": 33223920.85467632,
+      "liquidity": 33223920.85467632,
+      "alertedAt": "2026-06-11T15:40:19.130Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
