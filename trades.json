@@ -9083,6 +9083,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 52.8pts at alert time"
+    },
+    {
+      "id": "edge_2270330_1781178801575",
+      "marketId": "2270330",
+      "question": "US x Iran permanent peace deal by June 15, 2026?",
+      "slug": "us-x-iran-permanent-peace-deal-by-june-15-2026-734-856-129",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.058,
+      "impliedReturn": 1624.1379310344826,
+      "edgeScore": 99,
+      "endDate": "2026-06-15T00:00:00Z",
+      "daysLeft": 3.5046114351851854,
+      "volume": 25491914.23976075,
+      "liquidity": 25491914.23976075,
+      "alertedAt": "2026-06-11T11:53:21.575Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_553858_2270330_1781178802597",
+      "marketId": "553858+2270330",
+      "question": "[CORR] Will the New York Knicks win the 2026 NBA Finals? vs US x Iran permanent peace deal by June 15, 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.818,
+      "entryPriceB": 0.058,
+      "pricingGap": 75.99999999999999,
+      "alertedAt": "2026-06-11T11:53:22.597Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 76.0pts at alert time"
     }
   ]
 }
