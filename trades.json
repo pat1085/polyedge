@@ -9210,6 +9210,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_1962237_1781245650402",
+      "marketId": "1962237",
+      "question": "US x Iran permanent peace deal by June 30, 2026?",
+      "slug": "us-x-iran-permanent-peace-deal-by-june-30-2026-837-641-896-877-363-892-537-597",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.285,
+      "impliedReturn": 250.87719298245617,
+      "edgeScore": 32.6140350877193,
+      "endDate": "2026-05-31T00:00:00Z",
+      "daysLeft": -12.269101840277777,
+      "volume": 25437221.526246227,
+      "liquidity": 25437221.526246227,
+      "alertedAt": "2026-06-12T06:27:30.402Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
