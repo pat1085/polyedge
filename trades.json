@@ -9495,6 +9495,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 86.5pts at alert time"
+    },
+    {
+      "id": "corr_1962237_567621_1781515272059",
+      "marketId": "1962237+567621",
+      "question": "[CORR] US x Iran permanent peace deal by June 30, 2026? vs Will China invade Taiwan by end of 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.935,
+      "entryPriceB": 0.0615,
+      "pricingGap": 87.35000000000001,
+      "alertedAt": "2026-06-15T09:21:12.059Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 87.4pts at alert time"
     }
   ]
 }
