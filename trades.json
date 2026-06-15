@@ -9512,6 +9512,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 87.4pts at alert time"
+    },
+    {
+      "id": "corr_2270330_558941_1781550627409",
+      "marketId": "2270330+558941",
+      "question": "[CORR] US x Iran permanent peace deal by June 15, 2026? vs Will Netherlands win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.9625,
+      "entryPriceB": 0.0515,
+      "pricingGap": 91.10000000000001,
+      "alertedAt": "2026-06-15T19:10:27.409Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 91.1pts at alert time"
     }
   ]
 }
