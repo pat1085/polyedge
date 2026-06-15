@@ -9478,6 +9478,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_1962237_997488_1781492254854",
+      "marketId": "1962237+997488",
+      "question": "[CORR] US x Iran permanent peace deal by June 30, 2026? vs Will Trump acquire Greenland before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.925,
+      "entryPriceB": 0.0605,
+      "pricingGap": 86.45,
+      "alertedAt": "2026-06-15T02:57:34.854Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 86.5pts at alert time"
     }
   ]
 }
