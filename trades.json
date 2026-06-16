@@ -9619,6 +9619,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 24.1pts at alert time"
+    },
+    {
+      "id": "corr_558941_559652_1781616232961",
+      "marketId": "558941+559652",
+      "question": "[CORR] Will Netherlands win the 2026 FIFA World Cup? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0455,
+      "entryPriceB": 0.2455,
+      "pricingGap": 20,
+      "alertedAt": "2026-06-16T13:23:52.961Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.0pts at alert time"
     }
   ]
 }
