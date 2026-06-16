@@ -9100,10 +9100,10 @@
       "volume": 25491914.23976075,
       "liquidity": 25491914.23976075,
       "alertedAt": "2026-06-11T11:53:21.575Z",
-      "status": "PENDING",
-      "outcome": null,
-      "resolvedAt": null,
-      "paperPnl": null,
+      "status": "WIN",
+      "outcome": "YES",
+      "resolvedAt": "2026-06-16T13:02:50.289Z",
+      "paperPnl": 16.2414,
       "notes": ""
     },
     {
@@ -9227,10 +9227,10 @@
       "volume": 25437221.526246227,
       "liquidity": 25437221.526246227,
       "alertedAt": "2026-06-12T06:27:30.402Z",
-      "status": "PENDING",
-      "outcome": null,
-      "resolvedAt": null,
-      "paperPnl": null,
+      "status": "WIN",
+      "outcome": "YES",
+      "resolvedAt": "2026-06-16T13:02:51.892Z",
+      "paperPnl": 2.5088,
       "notes": ""
     },
     {
