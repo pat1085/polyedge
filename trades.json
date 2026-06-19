@@ -9895,6 +9895,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 20.1pts at alert time"
+    },
+    {
+      "id": "edge_558963_1781909223306",
+      "marketId": "558963",
+      "question": "Will Morocco win the 2026 FIFA World Cup?",
+      "slug": "will-morocco-win-the-2026-fifa-world-cup-464",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0345,
+      "impliedReturn": 2798.550724637681,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 30.050656215277776,
+      "volume": 62180205.10355089,
+      "liquidity": 62180205.10355089,
+      "alertedAt": "2026-06-19T22:47:03.306Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_558963_559652_1781909224284",
+      "marketId": "558963+559652",
+      "question": "[CORR] Will Morocco win the 2026 FIFA World Cup? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0345,
+      "entryPriceB": 0.2355,
+      "pricingGap": 20.099999999999998,
+      "alertedAt": "2026-06-19T22:47:04.284Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.1pts at alert time"
     }
   ]
 }
