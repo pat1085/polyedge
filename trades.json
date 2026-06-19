@@ -9856,6 +9856,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_558943_1781899923677",
+      "marketId": "558943",
+      "question": "Will USA win the 2026 FIFA World Cup?",
+      "slug": "will-usa-win-the-2026-fifa-world-cup-467",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0355,
+      "impliedReturn": 2716.9014084507044,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 30.158290810185186,
+      "volume": 82178197.05981527,
+      "liquidity": 82178197.05981527,
+      "alertedAt": "2026-06-19T20:12:03.677Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_558943_559652_1781899924850",
+      "marketId": "558943+559652",
+      "question": "[CORR] Will USA win the 2026 FIFA World Cup? vs Will Gavin Newsom win the 2028 Democratic presidential nomin",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0355,
+      "entryPriceB": 0.2365,
+      "pricingGap": 20.099999999999998,
+      "alertedAt": "2026-06-19T20:12:04.850Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.1pts at alert time"
     }
   ]
 }
