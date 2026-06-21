@@ -10068,6 +10068,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 26.8pts at alert time"
+    },
+    {
+      "id": "edge_558936_1782061186076",
+      "marketId": "558936",
+      "question": "Will France win the 2026 FIFA World Cup?",
+      "slug": "will-france-win-the-2026-fifa-world-cup-924",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.1975,
+      "impliedReturn": 406.3291139240506,
+      "edgeScore": 52.82278481012658,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 28.29182787037037,
+      "volume": 65642623.14329902,
+      "liquidity": 65642623.14329902,
+      "alertedAt": "2026-06-21T16:59:46.076Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
