@@ -10112,6 +10112,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_558951_1782214591149",
+      "marketId": "558951",
+      "question": "Will Norway win the 2026 FIFA World Cup?",
+      "slug": "will-norway-win-the-2026-fifa-world-cup-893",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0315,
+      "impliedReturn": 3074.603174603175,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 26.516306180555556,
+      "volume": 65666230.57529723,
+      "liquidity": 65666230.57529723,
+      "alertedAt": "2026-06-23T11:36:31.149Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
