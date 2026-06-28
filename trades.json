@@ -10566,6 +10566,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_558936_558939_1782619466446",
+      "marketId": "558936+558939",
+      "question": "[CORR] Will France win the 2026 FIFA World Cup? vs Will Germany win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.2375,
+      "entryPriceB": 0.0365,
+      "pricingGap": 20.099999999999998,
+      "alertedAt": "2026-06-28T04:04:26.446Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.1pts at alert time"
     }
   ]
 }
