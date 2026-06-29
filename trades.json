@@ -10734,6 +10734,57 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_558936_558941_1782777365282",
+      "marketId": "558936+558941",
+      "question": "[CORR] Will France win the 2026 FIFA World Cup? vs Will Netherlands win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.2605,
+      "entryPriceB": 0.0435,
+      "pricingGap": 21.700000000000003,
+      "alertedAt": "2026-06-29T23:56:05.282Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 21.7pts at alert time"
+    },
+    {
+      "id": "corr_558936_567621_1782777366471",
+      "marketId": "558936+567621",
+      "question": "[CORR] Will France win the 2026 FIFA World Cup? vs Will China invade Taiwan by end of 2026?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.2605,
+      "entryPriceB": 0.0555,
+      "pricingGap": 20.5,
+      "alertedAt": "2026-06-29T23:56:06.471Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.5pts at alert time"
+    },
+    {
+      "id": "corr_558936_997488_1782777367327",
+      "marketId": "558936+997488",
+      "question": "[CORR] Will France win the 2026 FIFA World Cup? vs Will Trump acquire Greenland before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.2605,
+      "entryPriceB": 0.056,
+      "pricingGap": 20.450000000000003,
+      "alertedAt": "2026-06-29T23:56:07.327Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 20.5pts at alert time"
     }
   ]
 }
