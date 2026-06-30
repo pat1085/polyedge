@@ -10802,6 +10802,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 21.0pts at alert time"
+    },
+    {
+      "id": "edge_558963_1782802273389",
+      "marketId": "558963",
+      "question": "Will Morocco win the 2026 FIFA World Cup?",
+      "slug": "will-morocco-win-the-2026-fifa-world-cup-464",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0405,
+      "impliedReturn": 2369.135802469136,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 19.71442841435185,
+      "volume": 98344514.75085013,
+      "liquidity": 98344514.75085013,
+      "alertedAt": "2026-06-30T06:51:13.389Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_558963_558936_1782802274559",
+      "marketId": "558963+558936",
+      "question": "[CORR] Will Morocco win the 2026 FIFA World Cup? vs Will France win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0405,
+      "entryPriceB": 0.2825,
+      "pricingGap": 24.199999999999996,
+      "alertedAt": "2026-06-30T06:51:14.559Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 24.2pts at alert time"
     }
   ]
 }
