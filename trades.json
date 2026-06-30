@@ -10785,6 +10785,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 20.5pts at alert time"
+    },
+    {
+      "id": "corr_558940_558936_1782787856107",
+      "marketId": "558940+558936",
+      "question": "[CORR] Will Portugal win the 2026 FIFA World Cup? vs Will France win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0545,
+      "entryPriceB": 0.2645,
+      "pricingGap": 21.000000000000004,
+      "alertedAt": "2026-06-30T02:50:56.107Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 21.0pts at alert time"
     }
   ]
 }
