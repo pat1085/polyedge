@@ -10841,6 +10841,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 24.2pts at alert time"
+    },
+    {
+      "id": "edge_558943_1782846905699",
+      "marketId": "558943",
+      "question": "Will USA win the 2026 FIFA World Cup?",
+      "slug": "will-usa-win-the-2026-fifa-world-cup-467",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0305,
+      "impliedReturn": 3178.6885245901635,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 19.197850752314814,
+      "volume": 115228651.96374065,
+      "liquidity": 115228651.96374065,
+      "alertedAt": "2026-06-30T19:15:05.699Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_558943_558936_1782846906826",
+      "marketId": "558943+558936",
+      "question": "[CORR] Will USA win the 2026 FIFA World Cup? vs Will France win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0305,
+      "entryPriceB": 0.2835,
+      "pricingGap": 25.3,
+      "alertedAt": "2026-06-30T19:15:06.826Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 25.3pts at alert time"
     }
   ]
 }
