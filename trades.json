@@ -10919,6 +10919,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 30.2pts at alert time"
+    },
+    {
+      "id": "edge_561230_1782896263059",
+      "marketId": "561230",
+      "question": "Will Gavin Newsom win the 2028 US Presidential Election?",
+      "slug": "will-gavin-newsom-win-the-2028-us-presidential-election",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.1225,
+      "impliedReturn": 716.3265306122449,
+      "edgeScore": 71.63265306122449,
+      "endDate": "2028-11-07T00:00:00Z",
+      "daysLeft": 859.6265850115741,
+      "volume": 17257183.667927176,
+      "liquidity": 17257183.667927176,
+      "alertedAt": "2026-07-01T08:57:43.059Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_558936_558937_1782896264111",
+      "marketId": "558936+558937",
+      "question": "[CORR] Will France win the 2026 FIFA World Cup? vs Will Brazil win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.3275,
+      "entryPriceB": 0.0665,
+      "pricingGap": 26.1,
+      "alertedAt": "2026-07-01T08:57:44.111Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 26.1pts at alert time"
     }
   ]
 }
