@@ -10880,6 +10880,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 25.3pts at alert time"
+    },
+    {
+      "id": "edge_558945_1782882021797",
+      "marketId": "558945",
+      "question": "Will Mexico win the 2026 FIFA World Cup?",
+      "slug": "will-mexico-win-the-2026-fifa-world-cup-529",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0315,
+      "impliedReturn": 3074.603174603175,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 18.791414421296295,
+      "volume": 112190153.2118827,
+      "liquidity": 112190153.2118827,
+      "alertedAt": "2026-07-01T05:00:21.797Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_558945_558936_1782882023453",
+      "marketId": "558945+558936",
+      "question": "[CORR] Will Mexico win the 2026 FIFA World Cup? vs Will France win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0315,
+      "entryPriceB": 0.3335,
+      "pricingGap": 30.200000000000003,
+      "alertedAt": "2026-07-01T05:00:23.453Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 30.2pts at alert time"
     }
   ]
 }
