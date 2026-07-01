@@ -8861,10 +8861,10 @@
       "volume": 23414560.647640288,
       "liquidity": 23414560.647640288,
       "alertedAt": "2026-06-09T06:32:05.321Z",
-      "status": "PENDING",
-      "outcome": null,
-      "resolvedAt": null,
-      "paperPnl": null,
+      "status": "LOSS",
+      "outcome": "NO",
+      "resolvedAt": "2026-07-01T11:31:50.559Z",
+      "paperPnl": -1,
       "notes": ""
     },
     {
