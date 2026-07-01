@@ -10958,6 +10958,40 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 26.1pts at alert time"
+    },
+    {
+      "id": "corr_558936_558940_1782933379187",
+      "marketId": "558936+558940",
+      "question": "[CORR] Will France win the 2026 FIFA World Cup? vs Will Portugal win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.3645,
+      "entryPriceB": 0.0535,
+      "pricingGap": 31.1,
+      "alertedAt": "2026-07-01T19:16:19.187Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 31.1pts at alert time"
+    },
+    {
+      "id": "corr_558936_703257_1782933380216",
+      "marketId": "558936+703257",
+      "question": "[CORR] Will France win the 2026 FIFA World Cup? vs Will the US confirm that aliens exist before 2027?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.3645,
+      "entryPriceB": 0.065,
+      "pricingGap": 29.95,
+      "alertedAt": "2026-07-01T19:16:20.216Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 29.9pts at alert time"
     }
   ]
 }
