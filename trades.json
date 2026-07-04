@@ -11385,6 +11385,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 47.7pts at alert time"
+    },
+    {
+      "id": "edge_2754873_1783203990506",
+      "marketId": "2754873",
+      "question": "Spread: France (-1.5)",
+      "slug": "fifwc-par-fra-2026-07-04-spread-away-1pt5",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.275,
+      "impliedReturn": 263.6363636363636,
+      "edgeScore": 34.27272727272727,
+      "endDate": "2026-07-04T21:00:00Z",
+      "daysLeft": -0.0600752662037037,
+      "volume": 15825132.263723059,
+      "liquidity": 15825132.263723059,
+      "alertedAt": "2026-07-04T22:26:30.506Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
