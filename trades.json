@@ -11468,6 +11468,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "edge_558951_1783288471098",
+      "marketId": "558951",
+      "question": "Will Norway win the 2026 FIFA World Cup?",
+      "slug": "will-norway-win-the-2026-fifa-world-cup-893",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0445,
+      "impliedReturn": 2147.191011235955,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 14.087140104166666,
+      "volume": 100888950.6380308,
+      "liquidity": 100888950.6380308,
+      "alertedAt": "2026-07-05T21:54:31.098Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_558951_558936_1783288472146",
+      "marketId": "558951+558936",
+      "question": "[CORR] Will Norway win the 2026 FIFA World Cup? vs Will France win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0445,
+      "entryPriceB": 0.3565,
+      "pricingGap": 31.2,
+      "alertedAt": "2026-07-05T21:54:32.146Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 31.2pts at alert time"
     }
   ]
 }
