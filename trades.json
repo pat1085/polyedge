@@ -11424,6 +11424,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 32.9pts at alert time"
+    },
+    {
+      "id": "edge_561229_1783229481135",
+      "marketId": "561229",
+      "question": "Will JD Vance win the 2028 US Presidential Election?",
+      "slug": "will-jd-vance-win-the-2028-us-presidential-election",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.2035,
+      "impliedReturn": 391.4004914004915,
+      "edgeScore": 39.14004914004915,
+      "endDate": "2028-11-07T00:00:00Z",
+      "daysLeft": 855.7698943171297,
+      "volume": 14521921.658396987,
+      "liquidity": 14521921.658396987,
+      "alertedAt": "2026-07-05T05:31:21.135Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
