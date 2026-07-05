@@ -11407,6 +11407,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_558936_558947_1783214207899",
+      "marketId": "558936+558947",
+      "question": "[CORR] Will France win the 2026 FIFA World Cup? vs Will Colombia win the 2026 FIFA World Cup?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.3605,
+      "entryPriceB": 0.0315,
+      "pricingGap": 32.9,
+      "alertedAt": "2026-07-05T01:16:47.899Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 32.9pts at alert time"
     }
   ]
 }
