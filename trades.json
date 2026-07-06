@@ -11731,6 +11731,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_558951_561974_1783378763926",
+      "marketId": "558951+561974",
+      "question": "[CORR] Will Norway win the 2026 FIFA World Cup? vs Will J.D. Vance win the 2028 Republican presidential nominat",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0475,
+      "entryPriceB": 0.398,
+      "pricingGap": 35.050000000000004,
+      "alertedAt": "2026-07-06T22:59:23.927Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 35.1pts at alert time"
     }
   ]
 }
