@@ -11709,6 +11709,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 36.1pts at alert time"
+    },
+    {
+      "id": "edge_559653_1783354424721",
+      "marketId": "559653",
+      "question": "Will Alexandria Ocasio-Cortez win the 2028 Democratic presidential nomination?",
+      "slug": "will-alexandria-ocasio-cortez-win-the-2028-democratic-presidential-nomination-653",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.1265,
+      "impliedReturn": 690.5138339920949,
+      "edgeScore": 69.05138339920948,
+      "endDate": "2028-11-07T00:00:00Z",
+      "daysLeft": 854.3237879976851,
+      "volume": 13810532.16371814,
+      "liquidity": 13810532.16371814,
+      "alertedAt": "2026-07-06T16:13:44.721Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
