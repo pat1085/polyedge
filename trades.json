@@ -11748,6 +11748,28 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 35.1pts at alert time"
+    },
+    {
+      "id": "edge_2766989_1783383118524",
+      "marketId": "2766989",
+      "question": "United States vs. Belgium: Team to Advance",
+      "slug": "fifwc-usa-bel-2026-07-06-team-to-advance",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.325,
+      "impliedReturn": 207.69230769230768,
+      "edgeScore": 27,
+      "endDate": "2026-07-07T00:00:00Z",
+      "daysLeft": -0.008316180555555556,
+      "volume": 13775903.769401971,
+      "liquidity": 13775903.769401971,
+      "alertedAt": "2026-07-07T00:11:58.524Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
     }
   ]
 }
