@@ -11770,6 +11770,23 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": ""
+    },
+    {
+      "id": "corr_703257_561974_1783441272010",
+      "marketId": "703257+561974",
+      "question": "[CORR] Will the US confirm that aliens exist before 2027? vs Will J.D. Vance win the 2028 Republican presidential nominat",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.065,
+      "entryPriceB": 0.402,
+      "pricingGap": 33.7,
+      "alertedAt": "2026-07-07T16:21:12.010Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 33.7pts at alert time"
     }
   ]
 }
