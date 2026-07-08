@@ -1,9 +1,9 @@
 name: Poly Edge Performance Report
 
 on:
-  schedule:
+  # schedule:   # disabled 2026-07-08 (crypto paper-bot retired, no measured edge)
     # Every Sunday at 09:00 UTC (2:30 PM IST)
-    - cron: "0 9 * * 0"
+    # - cron: "0 9 * * 0"   # disabled 2026-07-08 (crypto paper-bot retired, no measured edge)
   workflow_dispatch:
     # Manual trigger anytime from Actions tab
     inputs:

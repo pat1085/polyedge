@@ -1,9 +1,9 @@
 name: Poly Edge Scanner
 
 on:
-  schedule:
+  # schedule:   # disabled 2026-07-08 (crypto paper-bot retired, no measured edge)
     # Runs every 30 minutes
-    - cron: "*/30 * * * *"
+    # - cron: "*/30 * * * *"   # disabled 2026-07-08 (crypto paper-bot retired, no measured edge)
   workflow_dispatch:
     # Allows manual trigger from GitHub Actions tab
     inputs:
