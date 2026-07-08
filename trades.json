@@ -11826,6 +11826,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 35.8pts at alert time"
+    },
+    {
+      "id": "edge_558963_1783496648807",
+      "marketId": "558963",
+      "question": "Will Morocco win the 2026 FIFA World Cup?",
+      "slug": "will-morocco-win-the-2026-fifa-world-cup-464",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.0305,
+      "impliedReturn": 3178.6885245901635,
+      "edgeScore": 99,
+      "endDate": "2026-07-20T00:00:00Z",
+      "daysLeft": 11.677675891203704,
+      "volume": 139230279.14657372,
+      "liquidity": 139230279.14657372,
+      "alertedAt": "2026-07-08T07:44:08.807Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_558963_561974_1783496649878",
+      "marketId": "558963+561974",
+      "question": "[CORR] Will Morocco win the 2026 FIFA World Cup? vs Will J.D. Vance win the 2028 Republican presidential nominat",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.0305,
+      "entryPriceB": 0.4025,
+      "pricingGap": 37.2,
+      "alertedAt": "2026-07-08T07:44:09.878Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 37.2pts at alert time"
     }
   ]
 }
