@@ -11787,6 +11787,45 @@
       "resolvedAt": null,
       "paperPnl": null,
       "notes": "General gap of 33.7pts at alert time"
+    },
+    {
+      "id": "edge_2176262_1783488080132",
+      "marketId": "2176262",
+      "question": "Strait of Hormuz traffic returns to normal by July 31?",
+      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-july-31",
+      "category": "General",
+      "signalType": "edge",
+      "direction": "YES",
+      "entryPrice": 0.045,
+      "impliedReturn": 2122.222222222222,
+      "edgeScore": 99,
+      "endDate": "2026-07-31T00:00:00Z",
+      "daysLeft": 22.776850358796295,
+      "volume": 13145399.517695263,
+      "liquidity": 13145399.517695263,
+      "alertedAt": "2026-07-08T05:21:20.132Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": ""
+    },
+    {
+      "id": "corr_561974_2176262_1783488081107",
+      "marketId": "561974+2176262",
+      "question": "[CORR] Will J.D. Vance win the 2028 Republican presidential nominat vs Strait of Hormuz traffic returns to normal by July 31?",
+      "category": "General",
+      "signalType": "correlation",
+      "direction": "OBSERVE",
+      "entryPriceA": 0.4025,
+      "entryPriceB": 0.045,
+      "pricingGap": 35.75000000000001,
+      "alertedAt": "2026-07-08T05:21:21.107Z",
+      "status": "PENDING",
+      "outcome": null,
+      "resolvedAt": null,
+      "paperPnl": null,
+      "notes": "General gap of 35.8pts at alert time"
     }
   ]
 }
